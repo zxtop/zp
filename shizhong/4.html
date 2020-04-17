@@ -33,28 +33,28 @@
 	<body>
 		<ul>
 			<li>
-				<div><img src="img/0.jpg" alt=""><img src="img/0.jpg" alt=""></div>
+				<div><img src="img/0.JPG" alt=""><img src="img/0.JPG" alt=""></div>
 			</li>
 			<li>
-				<div><img src="img/0.jpg" alt=""><img src="img/0.jpg" alt=""></div>
+				<div><img src="img/0.JPG" alt=""><img src="img/0.JPG" alt=""></div>
 			</li>
 			<li>
-				<img src="img/colon.jpg" alt="">
+				<img src="img/colon.JPG" alt="">
 			</li>
 			<li>
-				<div><img src="img/0.jpg" alt=""><img src="img/0.jpg" alt=""></div>
+				<div><img src="img/0.JPG" alt=""><img src="img/0.JPG" alt=""></div>
 			</li>
 			<li>
-				<div><img src="img/0.jpg" alt=""><img src="img/0.jpg" alt=""></div>
+				<div><img src="img/0.JPG" alt=""><img src="img/0.JPG" alt=""></div>
 			</li>
 			<li>
-				<img src="img/colon.jpg" alt="">
+				<img src="img/colon.JPG" alt="">
 			</li>
 			<li>
-				<div><img src="img/0.jpg" alt=""><img src="img/0.jpg" alt=""></div>
+				<div><img src="img/0.JPG" alt=""><img src="img/0.JPG" alt=""></div>
 			</li>
 			<li>
-				<div><img src="img/0.jpg" alt=""><img src="img/0.jpg" alt=""></div>
+				<div><img src="img/0.JPG" alt=""><img src="img/0.JPG" alt=""></div>
 			</li>
 		</ul>
 		<script type="text/javascript">
@@ -65,15 +65,15 @@
 			// alert(imgs.length)
 			// auto();
 			for(var i=0;i<divs.length;i++){
-					divs[i].getElementsByTagName('img')[0].src="img/"+old.charAt(i)+".jpg";
+					divs[i].getElementsByTagName('img')[0].src="img/"+old.charAt(i)+".JPG";
 			}
 			setInterval(function(){
 				for(var i=0;i<imgs.length;i++){
-					imgs[i].src="img/colon1.jpg"
+					imgs[i].src="img/colon1.JPG"
 				}
 				setTimeout(function(){
 					for(var i=0;i<imgs.length;i++){
-						imgs[i].src="img/colon.jpg"
+						imgs[i].src="img/colon.JPG"
 					}
 				},500)
 				auto();
@@ -97,9 +97,9 @@
 				return time;
 			}
 			function slide(n,time){
-					divs[n].getElementsByTagName('img')[1].src="img/"+time.charAt(n)+".jpg";
+					divs[n].getElementsByTagName('img')[1].src="img/"+time.charAt(n)+".JPG";
 					move(divs[n],'top',-170,400,function(){
-						divs[n].getElementsByTagName('img')[0].src="img/"+time.charAt(n)+".jpg";
+						divs[n].getElementsByTagName('img')[0].src="img/"+time.charAt(n)+".JPG";
 						divs[n].style.top='';
 					})
 
