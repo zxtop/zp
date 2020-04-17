@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*
+CSS DOCUMENT
+code by zhangxing 2016.9.18
+*/
+*{margin:0;border:none;padding:0;list-style: none;}
+body,html{overflow-x: hidden;width: 100%;height: 100%;}
+body{color: #555;font-size: 12px;font-family:Microsoft YaHei,'宋体',Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;}
+textarea,input{word-wrap:break-word;word-break:break-all;padding:0;}img{border:0 none;}
+a,a:visited,a:hover{ color:#333; font-weight:normal; text-decoration:none;outline: none;}
+a:hover{ text-decoration:underline;}a{outline: none;expression_r(this.onFocus=this.blur());}
+a:link{outline: none;}
+li{display:inline-block;}
+.wrap_middle{width: 960px;margin:0 auto;}
+ol, ul{margin-bottom: 0px;}
+/*清除浮动*/
+.clearfix:after {clear:both; content:' '; display:block; font-size:0; line-height:0; visibility:hidden; width:0; height:0}
+*+html.clearfix {zoom:1}
+
+
+/* start */
+.main{width: 100%;height: 100%;overflow: hidden;}
+.main span{width: 100%;height: 5px;background: #2d2d2d;display: block;}
+.main_out{display: flex;display: -webkit-flex;display: -moz-flex;width: 100%;height: 100%;}
+.main_out .main_left,.main_out .main_right{width: 50%;height:100%;}
+.main_out .main_left{background: #eb5255;}
+.main_out .main_right{background: #fff;}
+.main_out .main_left .left_top{width: 80%;height: auto;margin: 0 auto;margin-top: 15%;}
+.left_top img{width: 100%;height: auto;}
+
+.left_bottom{width: 50%;background: url("../images/wb.png");height: 40%;margin: 0 auto;margin-top: 10%;position: relative;}
+.left_bottom .lb_top{width: 35px;height: 21px;background: url("../images/s.png");display: block;position: absolute;right: -20px;top: -15px;}
+.left_bottom .lb_bottom{width: 35px;height: 21px;background: url("../images/x.png");display: block;position: absolute;left: -20px;bottom: -15px;}
+.left_bottom p{color:#fff;font-size: 14px;text-align: center;line-height: 2em;padding-left: 30px;padding-right: 30px;}
+.left_bottom{padding-top: 15%;}
+.main_right .right_cont{width: 80%;height:70%;margin: 0 auto;margin-top: 15%;}
+.main_right .right_cont .rt,.main_right .right_cont .rb{width: 100%;height: 50%;display: flex;display: -webkit-flex;display: -moz-flex;}
+.main_right .right_cont a{width: 50%;height: 95%;display: table;background: red;margin: 1%;font-size: 20px;color:#fff;text-align: center;position: relative;}
+
+.main_right .right_cont a.one{background: #ca6363;}
+.main_right .right_cont a.two{background: #b96ab1;}
+.main_right .right_cont a.three{background: #edb84c;}
+.main_right .right_cont a.four{background: #5fa7dc;}
+.main_right .right_cont a:hover{text-decoration: none;transition:all 1s;}
+.main_right .right_cont a.one:hover{
+	background: #bc4949; transform: scale(1.1);
+}
+.main_right .right_cont a.two:hover{
+	background: #aa5aa2; transform: scale(1.1);
+}
+.main_right .right_cont a.three:hover{
+		background: #e0aa3b; transform: scale(1.1);
+
+}
+.main_right .right_cont a.four:hover{
+	background: #4b97ce; transform: scale(1.1);
+}
+
+.main_right .right_cont a p{display: table-cell;vertical-align: middle;text-align: center;}
+/* 其他作品 */
+.zp_top{width: 100%;height: auto;}
+.zp_top .span_p{width: 100%;height: 2px;display: block;background: #5fa7dc;}
+.zp_top .top_img{width:194px;margin: 0 auto;}
+.zp_top h3{text-align: center;font-size: 20px;}
+.zp_top .zp_cont{width: 60%;height: auto;margin: 0 auto;margin-top: 20px;background: #f4f4f4;padding:20px;box-shadow: 0px 2px 20px #ccc}
+.zp_top .zp_cont ul{text-align: center}
+.zp_top .zp_cont ul li{display: block;position: relative;}
+.zp_top .zp_cont ul li {font-size: 16px;line-height: 30px;background:#5fa7dc;padding:5px 15px;cursor: pointer;display: inline-block;margin: 4px;box-shadow: 0px 0px 10px #ccc;transition: all .5s}
+.zp_top .zp_cont ul li:hover{background: #bc4949;}
+
+.zp_top .zp_cont ul li a{color: #fff;}
+.zp_top .zp_cont ul li span{position: absolute;width: 100px;display: inline-block;right: 0px;top:5px;color:#ccc;background-color: none;display: none;}
+.zp_top h4{text-align: center;font-weight: 100;font-size: 16px;line-height: 50px;}
+.zp_top h4 a{color: #5fa7dc;}
+/* yd作品 */
+.ewm{width: 400px;height: 400px;background: url("../images/wb.png");position: absolute;left: 0px;top: 0px;right: 0px;bottom: 0px;margin: auto;}
+.ewm span{width: 50px;height: 50px;color:#fff;display: block;position: absolute;line-height: 50px;font-size: 24px;right: 0px;top: 0px;text-align: center;cursor: pointer;}
+.ewm p{color:#fff;text-align: center;font-size: 14px;margin-top: 320px;}
+.ewm img{position: absolute;left: 0px;top: 0px;right: 0px;bottom: 0px;margin: auto;}
+.ewm{display: none;}
+@media screen and (max-width:768px) {
+body,html{overflow-x: hidden;width: 100%;height: auto;background: #efefef;}
+.main_out .main_left .left_top{margin-top: 0px;}
+.left_top img{margin-top: 15px;}
+.left_bottom{padding-top: 20px;width: 80%;padding-bottom: 10px;}
+.left_bottom .lb_top,.left_bottom .lb_bottom{display: none;}
+.main_out{display: block;width: 100%;height: auto;}
+.main_out .main_left,.main_out .main_right{width: 100%;height:auto;padding-bottom: 20px;}
+.main_out .main_right{padding-top: 20px;}
+.main_right .right_cont{margin-top: 0px;}
+.main_right .right_cont a{margin: 0px;height: 150px;}
+}

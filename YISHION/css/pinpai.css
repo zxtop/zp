@@ -1,0 +1,67 @@
+*{margin:0;padding:0;border:none;list-style:none; text-decoration:none;}
+#header{width:100%;height:80px;background:url(../images/header_bg.png) repeat-x; position:fixed; z-index:1000;}
+#header .nav{width:900px;height:80px;margin:0 auto;}
+#header .nav ul{width:900px;height:80px;position:relative;overflow:hidden;}
+#header .nav ul li{width:115px;height:80px;float:left; position:relative;}
+#header .nav ul li.nav_you{float:right;}
+#header .nav ul li a{width:115px;height:80px;color:#FFF;font-size:14px;display:block;line-height:80px; text-align:center;}
+#header .nav span{width:137px;height:38px;display:block; background:url(../images/logo.png) no-repeat;position:absolute;left:370px;top:20px;}
+
+
+
+#banner{width:100%;height:600px; position:relative;overflow:hidden;}
+#banner ul.banner li{width:100%;height:598px;float:left;}
+#banner ul.banner li a.ban_a{width:100%;height:598px; background:url(../images/banner-1.jpg) no-repeat center;display:block; position:absolute;left:0;top:0;opacity:0;}
+#banner ul.banner li a.ban_b{width:100%;height:598px; background:url(../images/banner2.jpg) no-repeat center;display:block; position:absolute;left:0;top:0;opactity:0;}
+
+#banner ul.btn{width:100px;height:15px;position:absolute;left:0;top:548px;}
+#banner ul.btn li{width:15px;height:15px;background:#06F;float:left;margin-right:5px;}
+#banner ul.btn li.active{width:15px;height:15px;background:#F00;}
+
+#cont{width:1300px;height:1070px;margin:0 auto; position:relative;}
+#con_zuo{width:343px;height:1070px;background:#dadbdc; position:relative;float:left;}
+#con_zuo ul{width:263px;height:auto; position:absolute;left:82px;top:120px;}
+#con_zuo ul li{width:263px;height:49px;}
+#con_zuo ul li a{width:263px;height:49px;color:#fff;font-size:18px;font-family:"微软雅黑";display:block;line-height:49px;text-align:center;}
+#con_zuo ul li a.hove{background:#4b4b4b; position:relative}
+#con_zuo ul li a.hove span{width:18px;height:23px;display:block; position:absolute;top:12px;right:40px; background:url(../images/jt.jpg) no-repeat;}
+
+#cont .wenzi{width:913px;height:200px;margin-right:0;margin-top:100px;float:right; position:relative;}
+#cont .wenzi h2{font-size:30px; font-family:"Arial";color:#e98954; font-weight:100;}
+#cont .wenzi span{width:866px;height:1px; background:#656565;display:block; position:absolute;top:55px;}
+#cont .wenzi font a{color:#09F;font-size:14px;width:60px;height:16px;display:block;left:820px; position:absolute;}
+#cont .wenzi p{width:700px;height:234px;display:block; position:absolute;top:80px;left:30px; font-size:14px; font-family:"宋体";line-height:28px;}
+
+#cont .tu{width:936px;height:257px; background:url(../images/qq.jpg) no-repeat; position:absolute;left:253px;top:430px;}
+
+#con_zuo .zuo_xia{width:263px;height:49px; position:absolute;left:80px;top:830px;}
+#con_zuo .zuo_xia h2{ font-weight:100;color:#fff; font-family:"Arial";line-height:28px; text-align:center;font-size:18px;}
+
+#cont .fendian{width:200px;height:282px; background:url(../images/k4.jpg) no-repeat; position:absolute;left:400px;top:746px;}
+#cont .fendian ul{width:134px;height:282px;float:right;margin-right:10px;}
+#cont .fendian ul li.bb{width:170px;height:75px; cursor:pointer;}
+#cont .fendian ul li a{width:170px;height:75px;line-height:56px;text-align:center;color:#000;font-size:14px;display:block;}
+#cont .fendian ul li a.ch{color:#e98954;}
+
+#cont ul.zhanshi{width:442px;height:247px;}
+.tt{width:442px;height:247px;position:absolute;left:634px;top:763px;display:none;}
+/*#cont ul.zhanshi li img{ opacity:0;}
+*/
+
+
+#cont span.a1{width:464px;height:270px;display:block; background:url(../images/dd.png) no-repeat; position:absolute;left:620px;top:750px;}
+
+
+#cont ul.zi{width:208px;height:80px; }
+#cont ul.zi li{color:#09F; font-size:12px;line-height:24px;position:absolute;left:1097px;top:854px;display:none}
+
+#cont ul.btn_you{width:70px;height:30px; position:absolute;left:1132px;top:980px;}
+#cont ul.btn_you li.shang{width:30px;height:29px;background:url(../images/shang.jpg) no-repeat;float:left;margin-right:5px;}
+#cont ul.btn_you li.xia{width:30px;height:29px; background:url(../images/xia.jpg) no-repeat;float:left;}
+
+
+
+
+#bottom{width:100%;height:90px;background:#151515;margin-top:10px;}
+#bottom .copy{font-size:14px;font-family:"微软雅黑";color:#c7c5c5;margin-left:116px;padding-top:34px;float:left;}
+#bottom .cop{font-size:14px;font-family:"微软雅黑";color:#c7c5c5;float:right;margin-right:100px;width:100px;height:20px;padding-top:34px;}

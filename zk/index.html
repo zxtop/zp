@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>站酷商店</title>
+<link rel="stylesheet" type="text/css" href="style/index.css"/>
+</head>
+
+<body>
+
+<div class="top">
+	<div class="nav">
+    	<a href="#" class="logo"><img src="images/logo.png" /></a>
+        <ul class="nav_con">
+          <li><a href="#">飞吧少年</a></li>
+          <li><a href="#">咬铅笔</a></li>
+          <li><a href="#">孔雀明王</a></li>
+          <li><a href="#">态度</a></li>
+          <li><a href="#">站酷精灵</a></li>
+      </ul>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+	$(function(){
+		var lef=($(window).width()-$(".one_con img").width())/2;
+		var to=($(window).height()-$(".one_con img").height())/2;
+		var win_h=$(window).height();
+		$(".main li").height(win_h);
+		$(".nav li a").first().addClass("active");
+		
+		$(".one_con img").css({"position":"absolute","left":lef,"top":to});
+		$(".nav li a").click(
+			function(){
+				$(this).addClass("active").parent().siblings().children().removeClass("active");
+				var index=$(this).parent().index();
+				var top=$(".main li").eq(index).offset().top;
+				$("body","html").animate({"scrollTop":top});
+				}
+		
+		
+		)
+		
+		})
+</script>
+<ul class="main">
+<li class="one">
+	<div class="one_con"><img src="images/1-1.png" width="622" height="446" /></div>
+</li>
+<li class="two">
+	<div class="two_con">
+    	<h2>去旅途中发现灵感</h2>
+        <br />
+        <br />
+        <p>
+        	地点：旅途　/　获取灵感：224克
+            <br/>
+            <br />
+            又要出发了！背上行囊，乘坐旅行的大巴，去遇见更多有趣的人，发现更多新鲜的创意，找到不可思议的灵感。
+            <br />
+            <br />
+            <br />
+            这，就是我们旅行的意义。
+        </p>
+        <br />
+        <br />
+        <p class="btn">
+        	<a href="#">
+            	<span>马上订购>></span>
+            </a>
+        </p>
+    </div>
+</li>
+<li class="three">
+		<div class="three_con" >
+        	<h2>去旅途中发现灵感</h2>
+        <br />
+        <br />
+        <p>
+        	地点：旅途　/　获取灵感：224克
+            <br/>
+            <br />
+            又要出发了！背上行囊，乘坐旅行的大巴，去遇见更多有趣的人，发现更多新鲜的创意，找到不可思议的灵感。
+            <br />
+            <br />
+            <br />
+            这，就是我们旅行的意义。
+        </p>
+        <br />
+        <br />
+        <p class="btn">
+        	<a href="#">
+            	<span>马上订购>></span>
+            </a>
+        </p>
+    </div>
+        </div>
+
+</li>
+<li class="four">
+		<div class="four_con">
+        	<h2>去旅途中发现灵感</h2>
+        <br />
+        <br />
+        <p>
+        	地点：旅途　/　获取灵感：224克
+            <br/>
+            <br />
+            又要出发了！背上行囊，乘坐旅行的大巴，去遇见更多有趣的人，发现更多新鲜的创意，找到不可思议的灵感。
+            <br />
+            <br />
+            <br />
+            这，就是我们旅行的意义。
+        </p>
+        <br />
+        <br />
+        <p class="btn">
+        	<a href="#">
+            	<span>马上订购>></span>
+            </a>
+        </p>
+        </div>
+
+</li>
+<li class="five">
+		<div class="five_con">
+        
+        	   	<h2>去旅途中发现灵感</h2>
+        <br />
+        <br />
+        <p>
+        	地点：旅途　/　获取灵感：224克
+            <br/>
+            <br />
+            又要出发了！背上行囊，乘坐旅行的大巴，去遇见更多有趣的人，发现更多新鲜的创意，找到不可思议的灵感。
+            <br />
+            <br />
+            <br />
+            这，就是我们旅行的意义。
+        </p>
+        <br />
+        <br />
+        <p class="btn">
+        	<a href="#">
+            	<span>马上订购>></span>
+            </a>
+        </p>
+        </div>
+
+</li>
+<li class="six">
+		<div class="six_con">
+        	   	<h2>去旅途中发现灵感</h2>
+        <br />
+        <br />
+        <p>
+        	地点：旅途　/　获取灵感：224克
+            <br/>
+            <br />
+            又要出发了！背上行囊，乘坐旅行的大巴，去遇见更多有趣的人，发现更多新鲜的创意，找到不可思议的灵感。
+            <br />
+            <br />
+            <br />
+            这，就是我们旅行的意义。
+        </p>
+        <br />
+        <br />
+        <p class="btn">
+        	<a href="#">
+            	<span>马上订购>></span>
+            </a>
+        </p>
+        
+        </div>
+
+</li>
+</ul>
+
+</body>
+</html>

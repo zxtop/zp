@@ -1,0 +1,40 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jcDate时间选取jQuery插件</title>
+
+<style type="text/css">
+*{margin:0;padding:0;font-family: "宋体", Arial, "新宋体";font-size:12px;color:#555555;list-style:none;} 
+.clear{clear:both;height:0;visibility:hidden;}
+a{text-decoration:none;cursor:pointer;}
+a:hover{color:red;text-decoration:underline;}
+a img{border:0;vertical-align:middle;}
+</style>
+<link rel="stylesheet" type="text/css" href="style/jcDate.css"/>
+</head>
+<body>
+
+<div style="width:300px;color:#666767; font:100 12px/40px '';">
+  开始：<input class="jcDate" style="width:80px;height:18px;line-height:20px;padding:4px;" />
+  结束：<input class="jcDate" style="width:80px;height:18px;line-height:20px;padding:4px;" />
+</div>
+<script type="text/javascript" src="js/untitled.js"></script>
+<script type="text/javascript" src="js/jQuery-jcDate.js"></script>
+<script type="text/javascript">
+$(function (){
+	$("input.jcDate").jcDate({					       
+		IcoClass : "jcDateIco",
+		Event : "click",
+		Speed : 100,
+		Left : 0,
+		Top : 28,
+		format : "-",
+		Timeout : 100
+	});
+});
+</script>
+
+</body>
+</html>

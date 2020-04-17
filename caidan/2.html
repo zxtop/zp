@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">	
+	img{display: inline-block;width: 100px;height: 100px;position: absolute;top: 150px;}
+	a.return{width: 50%;line-height: 45px;background: #efefef;text-align: center;display: block;margin: 250px auto;color:#555;}
+	p{text-align: center;font-size: 20px;}
+	</style>
+</head>
+<script type="text/javascript">
+	window.onload=function(){
+		var aimg=document.getElementsByTagName('img');
+		for(var i=0;i<aimg.length;i++){
+			var pot=parseInt(getStyle(aimg[i],'left'));
+			aimg[i].style.left=280+i*110+'px';
+			aimg[i].onmouseover=function(){
+				shake(this,'top')
+			}
+
+
+		}
+
+
+		function shake(obj,attr,endFn){
+			
+		   if(obj.shake){return}
+			var arr=[];
+			var num=0;
+			// var obj.timer=null;
+			var lef=parseInt(getStyle(obj,attr));
+			for(var i=20;i>0;i-=2){
+				arr.push(i,-i)
+			}
+			arr.push(0);
+
+
+			clearInterval(obj.shake);
+			obj.shake=setInterval(function(){
+				obj.style[attr]=lef+arr[num]+'px';
+				num++;
+				if(num===arr.length){
+					clearInterval(obj.shake);
+					obj.shake=0;
+					endFn && endFn();
+				}
+
+			},30)
+
+
+		}
+
+		function getStyle(obj,attr){return obj.currentStyle?obj.currentStyle[attr]:getComputedStyle(obj)[attr];}
+	}
+</script>
+<body>
+	<p>颤抖吧！（鼠标狠狠的来回滑呀，试试bug修复没）</p>
+	<p style="font-size: 14px;">bug:来回移动后，位置不在一个位置上！修复函数：再次划上时，返回不让其再次执行封装函数</p>
+	<img src="img/1.jpg">
+	<img src="img/2.jpg">
+	<img src="img/3.jpg">
+	<img src="img/4.jpg">
+	<img src="img/5.jpg">
+	<img src="img/6.jpg">
+	<img src="img/7.jpg">	
+	<img src="img/8.jpg">
+
+	<a class="return" href="http://www.izhangxing.top/zp/index.html" target="_blank">返回</a>
+
+</body>
+</html>

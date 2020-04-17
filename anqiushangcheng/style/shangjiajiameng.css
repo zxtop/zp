@@ -1,0 +1,102 @@
+/*返回头部*/
+#db{width:41px;height:180px; border:1px solid #ccc; position:fixed;bottom:50px;right:10px; display:none;}
+
+/*商家加盟*/
+#neirong .neirong_left1{width:950px;height:709px;float:left;margin-top:18px; border:1px solid #ccc;}
+#neirong .neirong_left1 h3{color:#3b3b3b; font:100 18px/70px "微软雅黑"; text-indent:20px;}
+#neirong .neirong_left1 p{width:902px;height:auto; margin-left:20px; color:#444; font:100 14px/24px "微软雅黑"; letter-spacing:1px;}
+#neirong .neirong_left1 .dengpao{margin-top:50px; margin-left:20px;width:630px;height:120px; position:relative;}
+#neirong .neirong_left1 .dengpao img{float:left;}
+#neirong .neirong_left1 .dengpao h2{width:510px; color:#00a2ff; font:100 20px/30px "微软雅黑"; height:30px; display:block; float:right;}
+#neirong .neirong_left1 .dengpao p{width:510px;height:24px; display:block; float:right;}
+
+
+/*购物流程*/
+#neirong .gouwuliucheng{width:950px;height:auto;float:left;margin-top:18px; border:1px solid #ccc;}
+#neirong .gouwuliucheng h3{color:#3b3b3b; font:100 18px/70px "微软雅黑"; text-indent:20px;}
+#neirong .gouwuliucheng h4{ color:#c00000; font:900 16px/32px ""; text-indent:20px;}
+#neirong .gouwuliucheng .boderr{width:930px; height:1px; background:#e4e4e4;margin:10px auto;}
+#neirong .gouwuliucheng p{width:940px;height:30px; font:100 12px/30px ""; color:#444; text-indent:30px;}
+#neirong .gouwuliucheng img{margin-left:30px; margin-top:8px;}
+
+
+/*联系客服*/
+#neirong .lianxikefu{width:950px;height:709px;float:left;margin-top:18px; border:1px solid #ccc;}
+#neirong .lianxikefu h3{color:#3b3b3b; font:100 18px/50px "微软雅黑"; text-indent:20px; margin-top:20px;}
+#neirong .lianxikefu .boderr{width:930px; height:1px; background:#e4e4e4;margin:10px auto;}
+#neirong .lianxikefu p{width:830px;height:auto; font:100 14px/30px ""; color:#444; margin-left:20px;}
+
+/*退换货服务*/
+#neirong .tuihuan{width:950px;height:auto;float:left;margin-top:18px; border:1px solid #ccc;}
+#neirong .tuihuan h3{color:#3b3b3b; font:100 18px/50px "微软雅黑"; text-indent:30px; margin-top:20px;}
+#neirong .tuihuan p{width:830px;height:auto; font:100 14px/30px ""; color:#444; margin-left:30px;}
+
+/*常见问题*/
+#neirong .all{width:950px;height:auto;float:left;  margin-top:18px;}
+#neirong .all .lie{width:950px;height:45px; background:url(../images/lie.png) left bottom no-repeat;}
+#neirong .all .lie li{width:167px;height:43px; margin-right:25px; margin-left:10px; float:left; text-align:center; color:#797979; font:900 16px/41px ""; background:#efefef;cursor:pointer;}
+#neirong .all .lie li.one1{width:167px;height:43px; border-top:1px solid #ccc;border-right:1px solid #ccc; border-left:1px solid #ccc; background:#fff; z-index:88;}
+
+.two{width:167px;height:43px; border-top:1px solid #ccc;border-right:1px solid #ccc; border-left:1px solid #ccc; background:#fff; z-index:99;}
+
+#neirong .all .con{width:950px;height:auto; border:1px solid #ccc; margin-top:26px; display:none; float:left;}
+#neirong .all .con h3{color:#3b3b3b; font:100 18px/40px "微软雅黑"; text-indent:30px; margin-top:15px;}
+#neirong .all .con p{width:890px;height:auto; font:100 12px/30px ""; color:#444; margin-left:30px;}
+#neirong .all .con img{margin-left:20px;}
+
+
+/*售后*/
+
+  /*投诉咨询*/
+#neirong .shouhouzhengce{width:950px;height:auto;float:left;margin-top:18px;}
+#neirong .shouhouzhengce .lie{width:950px;height:45px; background:url(../images/lie.png) left bottom no-repeat;}
+#neirong .shouhouzhengce .lie li{width:167px;height:43px; margin-right:25px; margin-left:10px; float:left; text-align:center; color:#797979; font:900 16px/41px ""; background:#efefef;cursor:pointer;}
+#neirong .shouhouzhengce .lie li.one1{width:167px;height:43px; border-top:1px solid #ccc;border-right:1px solid #ccc; border-left:1px solid #ccc; background:#fff; z-index:88;}
+
+.two{width:167px;height:43px; border-top:1px solid #ccc;border-right:1px solid #ccc; border-left:1px solid #ccc; background:#fff; z-index:99;}
+
+
+#neirong .shouhouzhengce .con{width:950px;height:auto; border:1px solid #ccc; margin-top:26px; display:none; float:left;}
+#neirong .shouhouzhengce .con form{width:813px;height:420px; margin:0 auto; margin-top:30px; color:#1f1f1f; font:100 15px/45px "微软雅黑"}
+#neirong .shouhouzhengce .con form label.xm1{width:380px;height:55px; display:block;float:left;margin-top:30px;}
+#neirong .shouhouzhengce .con form label input{width:287px;height:45px; border:1px solid #ebebeb;}
+#neirong .shouhouzhengce .con form label.xm2{width:380px;height:55px; display:block;  float:right; margin-top:30px;}
+
+#neirong .shouhouzhengce .con form label.xx{width:800px;height:160px;  float:left;position:relative}
+#neirong .shouhouzhengce .con form label.xx span{width:110px;height:45px; display:block;float:left; position:absolute;left:0px;top:30px;}
+#neirong .shouhouzhengce .con form label.xx textarea{ position:absolute;right:0px;top:20px;}
+
+#neirong .shouhouzhengce .con form label.bb{width:813px;height:55px; display:block;float:left;margin-top:30px; text-indent:100px;}
+#neirong .shouhouzhengce .con form label.bb input.ba{width:179px;height:52px; background:url(../images/bu.jpg) no-repeat; color:#fff; font:100 18px/52px "微软雅黑" }
+  /*售后政策*/
+#neirong .shouhouzhengce .con h3{color:#00a2ff; font:100 18px/60px "微软雅黑"; text-indent:30px; margin-top:15px;}
+#neirong .shouhouzhengce .con p{width:890px;height:auto; font:100 13px/30px "微软雅黑"; color:#444; margin-left:30px;}
+
+/*公司简介*/
+  
+  /*关于我们*/
+#neirong .gongsi{width:950px;height:auto;float:left;margin-top:18px;}
+#neirong .gongsi .lie{width:950px;height:45px; background:url(../images/lie.png) left bottom no-repeat;}
+#neirong .gongsi .lie li{width:167px;height:43px; margin-right:25px; margin-left:10px; float:left; text-align:center; color:#797979; font:900 16px/41px ""; background:#efefef;cursor:pointer;}
+#neirong .gongsi .lie li.one1{width:167px;height:43px; border-top:1px solid #ccc;border-right:1px solid #ccc; border-left:1px solid #ccc; background:#fff; z-index:88;}
+
+.two{width:167px;height:43px; border-top:1px solid #ccc;border-right:1px solid #ccc; border-left:1px solid #ccc; background:#fff; z-index:99;}
+
+
+#neirong .gongsi .con{width:950px;height:auto; border:1px solid #ccc; margin-top:26px; display:none; float:left;}
+#neirong .gongsi .con h3{color:#00a2ff; font:100 18px/40px "微软雅黑"; text-indent:20px;}
+#neirong .gongsi .con p{width:902px;height:auto; margin-left:20px; color:#444; font:100 14px/24px "微软雅黑"; letter-spacing:1px;}
+#neirong .gongsi .con .dengpao{margin-top:50px; margin-left:20px;width:630px;height:120px; position:relative;}
+#neirong .gongsi .con .dengpao img{float:left;}
+#neirong .gongsi .con .dengpao h2{width:510px; color:#00a2ff; font:100 20px/30px "微软雅黑"; height:30px; display:block; float:right;}
+#neirong .gongsi .con .dengpao p{width:510px;height:24px; display:block; float:right;}
+
+  /*联系我们*/
+  /*聚优汇承诺*/
+#neirong .gongsi .con h4{ color:#454545; font:100 20px/80px "微软雅黑"; text-indent:30px;}  
+#neirong .gongsi .con .xiaofei{ margin-left:30px;}
+#neirong .gongsi .con h5{ color:#454545; font:900 14px/30px ""; text-indent:30px;}
+#neirong .gongsi .con .dd{ width:940px; height:1px; background:#ccc;margin-left:5px;}
+
+
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>青春系列</title>
+<link rel="stylesheet" type="text/css" href="css/chanpin.css"/>
+</head>
+<body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".nav li").hover(
+			function(){
+				$(this).children("a:odd").css({"background":"#AE1C1C"})
+				$(this).stop().animate({"top":"-80px"})
+				$(".nav li").eq(0).stop().css({"top":0});
+				
+			
+				},function(){
+					
+				$(this).stop().animate({"top":"0px"})
+					}
+		
+		)<!--导航的效果添加-->
+		
+				var l=($(window).width()-$(".btn").width())/2;
+		$(".btn").css({"left":l});
+		$(window).resize(
+			function(){
+				var l=($(window).width()-$(".btn").width())/2;
+				$(".btn").css({"left":l});
+				}
+		)
+		$(".banner li").first().children().animate({"opacity":1});
+			$("ul.btn li").click(
+				function(){
+					var num2=$(this).index();
+					$("ul.banner li").eq(num2).children().stop().animate({"opacity":1}).parent().siblings().children().stop().animate({"opacity":0});
+					$("ul.btn li").eq(num2).addClass("active").siblings().removeClass("active");
+					
+					}
+			
+			)
+			var time=setInterval(move,3000)
+			var num=0;
+			var lenght=$("ul.banner li").length;
+			function move(){
+				num++;
+				if(num==lenght)
+				{num=0;}
+				$("ul.banner li").eq(num).children().stop().animate({"opacity":1}).parent().siblings().children().stop().animate({"opacity":0})
+				$("ul.btn li").eq(num).addClass("active").siblings().removeClass("active");
+				
+				}
+			$("ul.banner").hover(function(){
+				clearInterval(time);
+				}),function(){
+					time=setInterval(move,5000)
+					}
+					
+					
+					<!--banner轮播效果-->
+		
+		
+		})
+</script>
+
+<!--导航开始-->
+<div id="header">
+	<div class="nav">
+    	<ul>
+        	<li><a href="index.html">首页</a></li>
+            <li><a href="pingpaigushi.html">BRAND</a><a href="pingpaigushi.html">品牌故事</a></li>
+            <li><a href="#">SHOW</a><a href="#">产品展示</a></li>
+            <span></span>
+            <li class="nav_you" style="margin:0;"><a href="#">JION</a><a href="#">加入我们</a></li>
+            <li class="nav_you"><a href="#">COOPERATION</a><a href="#">合作流程</a></li>
+            <li class="nav_you"><a href="#">NEWS</a><a href="#">新闻动态</a></li>
+        
+        </ul>
+    </div>
+</div>
+<!--导航结束-->
+
+<!--banner开始-->
+<div id="banner">
+	<ul class="banner">
+    	<li><a class="ban_a" href="#"></a></li>
+        <li><a class="ban_b" href="#"></a></li>
+    </ul>
+    
+    <ul class="btn">
+    	<li class="active"></li>
+        <li></li>
+    </ul>
+</div>
+<!--banner结束-->
+
+<!--品牌系列内容开始-->
+<div class="biaoti">
+    <h2>品牌系列</h2>
+    <b></b>
+    <span></span>
+    <p>BRAND MORE INTRODUCTION</p>
+    <font>YISHION</font>
+</div>
+<!--品牌系列内容结束-->
+
+<!--主要内容开始-->
+<div class="cont">
+    <div class="con_zuo">
+        <div class="zi">
+        	<h2>STREE</h2>
+            <p>the low-key fashion high street the<br /> LOOK,modern colors with the <br />process design of the high-tech<br />achievements street focus</p>
+        	<font>高街时尚<br /><br />系列</font>
+            <span></span>
+            <b></b>
+        </div>
+        
+        <div class="img2">
+        	<img src="images/h1.jpg"/>
+        </div>
+        <div class="img1">
+        	<img src="images/h2.jpg" />
+        </div>
+        
+        <script type="text/javascript">
+        	$(function(){
+				$(".con_zuo .img2").hover(
+					function(){
+						$(".con_zuo .img1").stop().animate({"height":"448px"})
+						},function(){
+							$(".con_zuo .img1").stop().animate({"height":0})
+							}
+				)
+				})
+        </script>
+
+        
+        
+    </div>
+    
+    <div class="con_you">
+    	<div class="tu1">
+        	<h2><a href="#">短羽绒</a></h2>
+            <span></span>
+            <p>清新撞色短羽绒，悦目舒适，搭配黑色长裤随性中彰显青春!</p>
+            <b></b> 
+        </div>
+        <div class="tu2">
+        	<h2><a href="#">短羽绒</a></h2>
+            <span></span>
+            <p>清新撞色短羽绒，悦目舒适，搭配黑色长裤随性中彰显青春!</p>
+            <b></b> 
+        </div>
+    </div>
+
+
+
+
+
+
+
+  <div class="con_zuo_xia">
+        <div class="zi">
+        	<h2>STREE</h2>
+            <p>the low-key fashion high street the<br /> LOOK,modern colors with the <br />process design of the high-tech<br />achievements street focus</p>
+        	<font>高街时尚<br /><br />系列</font>
+            <span></span>
+            <b></b>
+        </div>
+        
+        <div class="img2">
+        	<img src="images/y.jpg"/>
+        </div>
+
+  </div>
+    
+    
+    
+    <div class="yy"></div>
+    <div class="yz"><a href="#">简约服饰百搭有型，随意穿出欧美潮范儿。内搭增加时髦底气，穿出利落简约的风范。</a></div>
+    <div class="ya"><a href="#">简约服饰百搭有型，随意穿出欧美潮范儿。内搭增加时髦底气，穿出利落简约的风范。</a></div>
+    <div class="yx"></div>
+    
+    <div class="biaoti2">
+    <h2>更多产品</h2>
+    <b></b>
+    <span></span>
+    <p>BRAND MORE INTRODUCTION</p>
+    <font>YISHION</font>
+	</div>
+
+    
+</div>
+
+<div class="xia">
+	<ul>
+    	<li><a href=""#><img  src="images/x2.jpg"/></a></li>
+        <li><a href="#"><img src="images/x3.jpg" /></a></li>
+        <li><a href="#"><img src="images/x1.jpg" /></a></li>
+    </ul>
+</div>
+<!--主要内容结束-->
+
+</body>
+</html>

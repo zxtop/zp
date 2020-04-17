@@ -1,0 +1,25 @@
+#cont{width:1018px;height:1665px;margin:0 auto; position:relative;}
+#cont .wenzi1{width:509px;height:475px; position:absolute;right:0;top:-55px; background:#fff;}
+#cont .wenzi1 h2{ font-size:18px; font-family:"微软雅黑"; font-weight:100;color:#333;line-height:30px; color:#161616;padding-top:40px;padding-left:45px;}
+#cont .wenzi1 span{width:414px;height:1px;display:block;background:#666; position:absolute;left:40px;top:120px;}
+#cont .wenzi1 p{width:414px;height:400px;display:block;font-size:14px; font-family:"宋体";line-height:28px; position:absolute;left:45px;top:150px; color:#595858}
+
+
+#cont .zoomybox{width:509px;height:554px; position:absolute;left:0;top:0;}
+#cont .wenzi2{width:509px;height:475px; position:absolute;left:0;top:554px;}
+#cont .wenzi2 h2{ font-size:18px; font-family:"Arial"; font-weight:100;color:#333;line-height:30px; color:#161616;padding-top:70px;padding-left:70px;}
+#cont .wenzi2 span{width:414px;height:1px;display:block;background:#666; position:absolute;left:0px;top:120px;}
+#cont .wenzi2 p{width:414px;height:400px;display:block;font-size:14px; font-family:"宋体";line-height:28px; position:absolute;left:0px;top:150px; color:#595858}
+
+
+#cont .chanpin2{width:509px;height:554px; background:url(../images/c2.jpg); position:absolute;left:509px;top:555px;}
+#cont .chanpin3{width:509px;height:554px; background:url(../images/c3.jpg); position:absolute;left:0px;top:1108px;}
+
+#cont .wenzi3{width:509px;height:475px; position:absolute;left:580px;top:1108px;}
+#cont .wenzi3 h2{ font-size:18px; font-family:"Arial"; font-weight:100;color:#333;line-height:30px; color:#161616;padding-top:70px;padding-left:70px;}
+#cont .wenzi3 span{width:414px;height:1px;display:block;background:#666; position:absolute;left:0px;top:120px;}
+#cont .wenzi3 p{width:414px;height:400px;display:block;font-size:14px; font-family:"宋体";line-height:28px; position:absolute;left:0px;top:150px; color:#595858}
+
+#bottom1{width:100%;height:90px;background:#151515;}
+#bottom1 .copy{font-size:14px;font-family:"微软雅黑";color:#c7c5c5;margin-left:116px;padding-top:34px;float:left;}
+#bottom1 .cop{font-size:14px;font-family:"微软雅黑";color:#c7c5c5;float:right;margin-right:100px;width:100px;height:20px;padding-top:34px;}

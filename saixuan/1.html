@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<div id="wrap">
+		<section id="section">
+			<nav id="choose">
+				<span>你的选择:</span>
+				<div>
+					<!-- <mark>魅族<a href="javascript:;">x</a></mark>
+					<mark>魅族<a href="javascript:;">x</a></mark> -->
+				</div>
+			</nav>
+			<ul id="type">
+			</ul>
+		</section>
+		<nav class="filter-nav">
+			<span class="nav-color">综合排序</span>
+			<span>销量排序</span>
+			<span>价格低到高</span>
+			<span>价格高到低</span>
+		</nav>
+		<section class="shop-list"></section>
+	</div>
+	<script>
+	var crumbData = [
+			{
+				"title": "品牌",
+				"data": [ "苹果","小米","锤子","魅族","华为","三星","OPPO","vivo","乐视"]
+			},
+			{
+				"title": "尺寸",
+				"data": ["4.0-4.5英寸","4.6-4.9英寸","5.0-5.5英寸","6.0英寸以上"]
+			},
+			{
+				"title": "系统",
+				"data": ["android","ios","window phone","无","其他"]
+			},
+			{
+				"title": "网络",
+				"data": ["联通3G","双卡单4G","双卡双4G","联通4G"]
+			}
+		]
+		var chooseObj={};
+		var type=document.getElementById('type');
+		var len=crumbData.length;
+		var newli=null;
+		var newspan=null;
+		var newa=null;
+		for(var i=0;i<len;i++){
+			newli=document.createElement('li');
+			newspan=document.createElement('span');
+			newspan.innerText=crumbData[i].title;
+			newli.appendChild(newspan)
+			for(var j=0;j<crumbData[i].data.length;j++){
+				newa=document.createElement('a');
+				newa.href="javascript:;";
+				newa.innerText=crumbData[i].data[j];
+				newli.appendChild(newa);
+			}
+
+			
+			type.appendChild(newli);
+		}
+
+		var lis=type.children;
+		
+		for(var k=0;k<lis.length;k++){
+			lis[k].prev=null;
+			lis[k].index=k;
+			var itemA=lis[k].querySelectorAll('a');
+
+			for(var m=0;m<itemA.length;m++){
+				itemA[m].onclick=function(){
+					var parent=this.parentNode;
+
+					chooseObj[parent.index]=this.innerText;
+					console.log(chooseObj);
+					creatChoose();
+
+					if(parent.prev){
+						parent.prev.style.color='';
+					}
+					this.style.color='red';
+					parent.prev=this;
+				}
+			}
+		}
+
+		var div=document.querySelector('#choose div')
+		
+		function creatChoose(){
+			var html='';
+			for(var i=0;i<lis.length;i++){
+				if(chooseObj[i]){
+					html+='<mark>'+chooseObj[i]+'<a href="javascript:;" data-index='+i+'>x</a></mark>'
+				}
+			}
+			div.innerHTML=html;
+			var chooseA=div.querySelectorAll('a');
+			for(j=0;j<chooseA.length;j++){
+				chooseA[j].onclick=function(){
+					this.parentNode.parentNode.removeChild(this.parentNode);
+					delete chooseObj[this.dataset.index];
+					console.log(chooseObj)
+					lis[this.dataset.index].prev.style.color='';
+				}
+			}
+
+
+		}
+
+
+	</script>
+</body>
+</html>

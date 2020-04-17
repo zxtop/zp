@@ -1,0 +1,176 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<title>加分效果 </title> 
+<style> 
+#box { width:500px; height:50px; border:1px solid #333; position:relative; margin:100px auto 0; } 
+#box span { float:left; width:50px; height:50px; text-align:center; line-height:50px; position:relative; top:0; z-index:2; font-size:25px; filter:alpha(opacity:100); opacity:1; } 
+#box p { margin:0; width:500px; height:50px; background:yellow; position:absolute; top:0; left:0; filter:alpha(opacity:50); opacity:0.5; } 
+        a{width: 50%;line-height: 45px;background: #efefef;text-align: center;display: block;margin: 60px auto;color:#555;}
+
+</style> 
+
+<script> 
+window.onload = function () { 
+    var oDiv = document.getElementById('box'); 
+    var aSpan = oDiv.getElementsByTagName('span'); 
+    var oP = oDiv.getElementsByTagName('p')[0]; 
+    var timer = null; 
+    var onOff = true; 
+     
+    oDiv.onclick = function () { 
+         
+        if ( onOff ) { 
+             
+            onOff = false; 
+         
+            var iNow = 0; 
+     
+            opacity( oP, 4, 100, function () { 
+                opacity( oP, 4, 0, function () { 
+                    fnReset(); 
+                }); 
+            }); 
+             
+            doMove( oP, 'width', 14, 500 ); 
+             
+            timer = setInterval(function (){ 
+             
+                opacity( aSpan[iNow], 4, 20 ); 
+                doMove( aSpan[iNow], 'top', 6, -100 ); 
+                 
+                iNow ++; 
+                if ( iNow == aSpan.length ) { 
+                    clearInterval( timer ); 
+                } 
+             
+            }, 50); 
+         
+        } 
+     
+    }; 
+     
+    function fnReset () { 
+        var num = 0; 
+        oP.style.width = 0; 
+        for ( var i=0; i<aSpan.length; i++ ) { 
+            aSpan[i].style.top = 0; 
+            opacity( aSpan[i], 5, 100 , function (){ 
+                num++; 
+                if ( num == aSpan.length ) { 
+                    onOff = true; 
+                } 
+            }); 
+        } 
+    } 
+
+
+
+
+function doMove ( obj, attr, dir, target, endFn ) { 
+
+    dir = parseInt(getStyle( obj, attr )) < target ? dir : -dir; 
+     
+    clearInterval( obj.timer ); 
+     
+    obj.timer = setInterval(function () { 
+        var speed = parseInt(getStyle( obj, attr )) + dir;            // 步长 
+         
+        if ( speed > target && dir > 0 ||  speed < target && dir < 0  ) { 
+            speed = target; 
+        } 
+         
+        obj.style[attr] = speed + 'px'; 
+         
+         
+        if ( speed == target ) { 
+            clearInterval( obj.timer ); 
+            endFn && endFn(); 
+        } 
+         
+    }, 30); 
+} 
+
+function getStyle ( obj, attr ) { return obj.currentStyle?obj.currentStyle[attr] : getComputedStyle( obj )[attr]; } 
+
+function shake ( obj, attr, endFn ) { 
+     
+    if ( obj.onOff ) return; 
+    obj.onOff = true; 
+     
+    var pos = parseInt( getStyle(obj, attr) );            // 有隐患的 
+     
+    var arr = [];            // 20, -20, 18, -18 ..... 0 
+    var num = 0; 
+    var timer = null; 
+         
+    for ( var i=20; i>0; i-=2 ) { 
+        arr.push( i, -i ); 
+    } 
+    arr.push(0); 
+         
+    clearInterval( obj.shake ); 
+    obj.shake = setInterval(function (){ 
+        obj.style[attr] = pos + arr[num] + 'px'; 
+        num++; 
+        if ( num === arr.length ) { 
+            clearInterval( obj.shake ); 
+            endFn && endFn(); 
+            obj.onOff = false; 
+        } 
+    }, 50); 
+} 
+
+function opacity ( obj, dir, target, endFn ) { 
+    dir = getStyle(obj, 'opacity')*100<target?dir:-dir; 
+    clearInterval( obj.opacity ); 
+    obj.opacity = setInterval( function () { 
+        var speed = getStyle(obj, 'opacity')*100 + dir; 
+        if ( speed>target && dir>0 || speed<target && dir<0 ) { speed = target; } 
+        obj.style.filter = 'alpha(opacity:'+speed+')'; 
+        obj.style.opacity = speed/100; 
+         
+        if ( speed === target ) { 
+            clearInterval( obj.opacity ); 
+            endFn && endFn(); 
+        } 
+    }, 50 ); 
+} 
+
+
+    
+}; 
+
+
+
+
+</script> 
+
+</head> 
+
+<body> 
+<h3 style="text-align: center;">点击黄色区域--加分</h3>
+<div id="box"> 
+
+    <span>+1</span> 
+    <span>+1</span> 
+    <span>+1</span> 
+    <span>+1</span> 
+    <span>+1</span> 
+    <span>+1</span> 
+    <span>+1</span> 
+    <span>+1</span> 
+    <span>+1</span> 
+    <span>+1</span> 
+  <p></p> 
+
+</div> 
+        <a href="http://www.izhangxing.top/zp/index.html" target="_blank">返回</a>
+
+</body> 
+</html> 
+
+
+
+    

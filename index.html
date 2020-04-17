@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="Copyright" content="Copyright (c) 2017 by 张幸"/>
+<title>个人站</title>
+<meta name="description" content="工作记录"/>
+<meta name="keywords" content="工作记录"/>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 引入 Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+<div class="main">
+	<span></span>
+	<div class="main_out">
+		<div class="main_left">
+			<div class="left_top">
+				<img src="images/me.jpg" alt="">
+			</div>
+			<div class="left_bottom" id="wao">
+				<i class="lb_top"></i>
+				<i class="lb_bottom"></i>
+				
+				<p id="op">
+						每天进步一小步，总会达到意想不到的惊喜</p>
+
+			</div>
+		</div>
+		<div class="main_right">
+		
+			<div class="right_cont">
+
+				<div class="rt">
+					<a class="one" href="yd.html"  ><p>移动+小站</p></a>
+					<a class="two" href="pc.html"  ><P>自适应/响应/idea</P></a>
+				</div>
+
+				<div class="rb">
+					<a class="three" href="https://zxtop.github.io/"  ><P>我的博客</P></a>
+					<a class="four" href="qita.html"  ><P>Study/不如去做</P></a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	window.onload=function(){
+		var wao=document.getElementById("wao");
+
+		var arry=["尽力做到最好","每天进步一小步，总会达到意想不到的惊喜","学习是一生都要进行的事"];
+		var index=0;
+			function go(){
+		 timer=setInterval(function(){
+			var obp=document.getElementById("op");
+				if(index==arry.length-1){
+					index=0;
+				}else{
+					index++;
+				}
+
+				obp.innerHTML=arry[index];			
+			},3000);
+		 }
+		 go();
+		wao.onmouseover=function(){
+			clearInterval(timer);
+		}
+		wao.onmouseout=function(){
+			go();
+		}
+
+		
+	
+	}
+</script>
+
+
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) --> 
+<script src="https://code.jquery.com/jquery.js"></script> 
+<!-- 包括所有已编译的插件 --> 
+<script src="js/bootstrap.min.js"></script> 
+</body>
+</html>

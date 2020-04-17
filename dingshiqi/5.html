@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>封装-定时器</title>
+	<script type="text/javascript" src="1.js"></script>
+</head>
+
+<script type="text/javascript">
+	window.onload=function(){
+		var str='';
+		var len=24;
+		 var timer=null;
+		 var n_timer=null;
+		var num=0;
+		var off=true;
+		var aDiv=document.getElementsByTagName('div');
+		var aBtn=document.getElementsByTagName('input');
+		for(var i=0;i<len;i++){
+			str+='<div style="width:50px;height:50px;background:red;position:absolute;top:60px;left:'+i*60+'px;"></div>'
+		}
+		document.body.innerHTML+=str;
+/*		aBtn[1].onclick=function(){
+			clearInterval(timer)
+			timer=setInterval(function(){
+				domove(aDiv[num-1],'top',34,40);
+				num--;
+				if(num===0){
+					clearInterval(timer);
+				}
+			},30)
+			
+		}
+
+		aBtn[0].onclick=function(){
+			clearInterval(timer);
+			timer=setInterval(function(){
+				domove(aDiv[num],'top',34,500);
+				num++;
+				if(num===len){
+					clearInterval(timer)
+				}
+
+			},30)
+		}
+*/
+
+		document.onclick=function(){
+			if(off){
+				clearInterval(timer);
+				timer=setInterval(function(){
+					domove(aDiv[num],'top',34,600);
+					num++;
+					if(num===len){
+						clearInterval(timer)
+					}
+
+				},30)
+				off=!off;
+			}else{
+				clearInterval(timer)
+				timer=setInterval(function(){
+					domove(aDiv[num-1],'top',34,60);
+					num--;
+					if(num===0){
+						clearInterval(timer);
+					}
+				},30)
+				off=true
+			}
+
+		}
+
+
+	}
+</script>
+<style type="text/css">
+body,html{overflow-x: hidden;}
+a{width: 50%;line-height: 45px;background: #efefef;text-align: center;display: block;margin: 0 auto;margin-top:620px;color:#555;}
+p{text-align: center;font-size: 20px;font-weight: bold;}
+</style>
+<body>
+<!-- 	<input type="button" name="" value="下落">
+<input type="button" name="" value="上升">
+ -->
+ 	<p>任意点击好吗？</p>
+ 	<a href="http://www.izhangxing.top/zp/index.html" target="_blank">返回</a>
+
+ </body>
+</html>

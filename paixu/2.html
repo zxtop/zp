@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	#div1{width: 600px;height: 300px;position: relative;overflow: hidden;margin: 0 auto}
+	#div1 img{width: 600px;height: 300px;position: absolute;left: 0px;top: 0px;}
+	#div1 .txt{width: 600px;height: 100px;background: #ccc;opacity: .5;display: block;position: absolute;left: 0px;bottom: -100px;color:#000;display: block;}
+			a{width: 50%;line-height: 45px;background: #efefef;text-align: center;display: block;margin: 20px auto;color:#555;}
+
+	</style>
+</head>
+<script type="text/javascript">
+	window.onload=function(){
+		var oDiv=document.getElementById('div1');
+		var arr=['img/a.jpg','img/b.jpg','img/c.jpg','img/d.jpg']
+		var oimg=oDiv.getElementsByTagName('img')[0];
+		arr1=getClass('div','txt');
+		var num=0;
+		var timer=null;
+		oimg.src=arr[num];
+		arr1[num].style.bottom='0px';
+
+		clearInterval(timer)
+		timer=setInterval(function(){
+
+			
+			for(var i=0;i<arr1.length;i++){
+				
+				arr1[i].style.bottom='-100px';
+			}
+			num++;
+			if(num==arr.length){
+				num=0;
+			}
+			oimg.src=arr[num];
+			// arr1[num].style.bottom='0px';
+			doMove(arr1[num],'bottom',20,0);
+			
+
+		},2000)
+
+		function getClass(tag,classname){
+			if(document.getElementByClassName){
+				return document.getElementByClassName(className);
+
+			}else{
+				var tags=document.getElementsByTagName(tag);
+				var arr=[];
+				for(var i=0;i<tags.length;i++){
+					if(tags[i].className==classname){
+						arr[arr.length]=tags[i]
+					}
+				}
+				return arr;
+			}
+
+		}
+
+
+
+function doMove ( obj, attr, dir, target, endFn ) {
+	
+	dir = parseInt(getStyle( obj, attr )) < target ? dir : -dir;
+	
+	clearInterval( obj.timer );
+	
+	obj.timer = setInterval(function () {
+		
+		var speed = parseInt(getStyle( obj, attr )) + dir;			// 步长
+		
+		if ( speed > target && dir > 0 ||  speed < target && dir < 0  ) {
+			speed = target;
+		}
+		
+		obj.style[attr] = speed + 'px';
+		
+		if ( speed == target ) {
+			clearInterval( obj.timer );
+			
+			/*
+			if ( endFn ) {
+				endFn();
+			}
+			*/
+			endFn && endFn();
+			
+		}
+		
+	}, 100);
+}
+
+function getStyle ( obj, attr ) { return obj.currentStyle?obj.currentStyle[attr] : getComputedStyle( obj )[attr]; }
+
+
+	}
+</script>
+<body>
+	<div id="div1">
+		<img src="img/a.jpg">
+		<div class="txt">
+			<h3>这是第一张图1</h3>
+			<p>而不是各自缅怀，等着潮汐更改</p>
+		</div>
+		<div class="txt">
+			<h3>这是第一张图2</h3>
+			<p>而不是各自缅怀，等着潮汐更改</p>
+		</div>
+		<div class="txt">
+			<h3>这是第一张图3</h3>
+			<p>而不是各自缅怀，等着潮汐更改</p>
+		</div>
+		<div class="txt">
+			<h3>这是第一张图4</h3>
+			<p>而不是各自缅怀，等着潮汐更改</p>
+		</div>
+	</div>
+			<a href="http://www.izhangxing.top/zp/index.html" target="_blank">返回</a>
+
+</body>
+</html>

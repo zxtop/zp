@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>排序问题</title>
+	<style type="text/css">
+		*{margin: 0;padding:0;border:none;list-style: none;}
+		.btn{width: 100%;text-align: center;}
+		a{width: 50%;line-height: 45px;background: #efefef;text-align: center;display: block;margin: 20px auto;color:#555;}
+		.btn input{margin:20px 30px;padding: 10px;}
+		.img_out{width: 1200px;margin: 0 auto;}
+		li{float: left;background: #efefef;padding:10px;}
+		p{text-align: center;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var json=[
+
+					{'img':'images/a.jpg','txt':'1-温馨办公'},
+					{'img':'images/b.jpg','txt':'2-温馨办公'},
+					{'img':'images/c.jpg','txt':'3-温馨办公'},
+					{'img':'images/d.jpg','txt':'4-温馨办公'},
+					{'img':'images/e.jpg','txt':'5-温馨办公'},
+					{'img':'images/f.jpg','txt':'6-温馨办公'},
+					{'img':'images/g.jpg','txt':'7-温馨办公'},
+					{'img':'images/h.jpg','txt':'8-温馨办公'}
+
+			]
+
+			var oul=document.getElementById('ul');
+			var btn1=document.getElementById('btn1');
+			var btn2=document.getElementById('btn2');
+			// 初始化
+			init(json);
+			function init(arry){
+				for(var i=0;i<arry.length;i++){
+					var ali=document.createElement('li');
+					var aimg=document.createElement('img');
+					var op=document.createElement('p');
+
+					aimg.src=arry[i].img;
+					op.innerHTML=arry[i].txt;
+					oul.appendChild(ali);
+					ali.appendChild(aimg);
+					ali.appendChild(op);
+				}
+			}
+			// 排序
+			function dx(){
+				// for(var i=0;i<json.length;i++){
+				// 	arr.push(json[i].txt);
+				// }
+				// json.sort(function(a,b){
+				// 	return parseInt(b)-parseInt(a)
+				// });
+
+				// alert(json)				
+				
+				for(var i=0;i<json.length;i++){
+					for(var j=i+1;j<json.length;j++){
+						if(parseInt(json[i].txt)<parseInt(json[j].txt)){
+							var tmp=json[i];
+							json[i]=json[j];
+							json[j]=tmp;
+						}
+					}
+					
+				}
+				init(json);
+				
+			}
+			// 随机
+
+			function ram(){
+/*				var arr=[];
+			
+			var p=json.length-1;	
+			
+			
+			
+			for(var i=0;i<json.length;i++){	
+
+				var n=Math.round(Math.random()*p);
+					if(arr.length<=json.length){
+						arr.push(json[n]);
+
+					}
+
+			 }
+			 for(var i=0;i<arr.length;i++){
+
+				for(var j=i+1;j<arr.length;j++){
+
+					if(arr[i]==arr[j]){
+						arr.splice(j,1);
+						j--
+					}
+				}
+
+			 }
+*/
+				json.sort(function(a,b){
+					return Math.random()-0.5
+				})
+				init(json)
+			}
+
+			/*点击*/
+
+			btn1.onclick=function(){
+				oul.innerHTML='';
+				dx();
+			}
+			btn2.onclick=function(){
+				oul.innerHTML='';
+				ram();
+			}
+
+
+
+		}
+	</script>
+</head>
+<body>
+	<div class="btn">
+		<input type="button" name="" value="从大到小" id="btn1">
+		<input type="button" name="" value="打乱顺序" id="btn2">
+	</div>
+	<div class="img_out">
+		<ul id="ul">
+<!-- 		<li><img src="images/a.jpg"><p>1-温馨办公</p></li>
+			<li><img src="images/b.jpg"><p>2-温馨办公</p></li>
+			<li><img src="images/c.jpg"><p>3-温馨办公</p></li>
+			<li><img src="images/d.jpg"><p>4-温馨办公</p></li>
+ -->	
+ 		</ul>
+	</div>
+	<div style="clear: both;"></div>
+	
+		<a href="http://www.izhangxing.top/zp/index.html" target="_blank">返回</a>
+	
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>以纯首页</title>
+<link rel="stylesheet" type="text/css" href="css/css.css"/>
+<script type="text/javascript" src="js/lrtk.js"></script><!--新闻动态右侧的小banner滚动-->
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		$(".nav li").hover(
+			function(){
+				$(this).children("a:odd").css({"background":"#AE1C1C"})
+				$(this).stop().animate({"top":"-80px"})
+				$(".nav li").eq(0).stop().css({"top":0});
+				
+			
+				},function(){
+					
+				$(this).stop().animate({"top":"0px"})
+					}
+		
+		)<!--导航的效果添加-->
+		$("ul.tu li").first().show();
+		
+		$("ul.lie li").hover(
+			function(){
+				var num=$(this).index();
+				$("ul.tu li").eq(num).fadeIn().siblings("ul.tu li").fadeOut();
+				$(this).stop().animate({"padding-left":"40px"});
+				},function(){
+					$(this).stop().animate({"padding-left":"28px"},500);
+					
+					}
+		
+		)<!--左侧小图片的展示-->
+		
+		var l=($(window).width()-$(".btn").width())/2;
+		$(".btn").css({"left":l});
+		$(window).resize(
+			function(){
+				var l=($(window).width()-$(".btn").width())/2;
+				$(".btn").css({"left":l});
+				}
+		)
+		$(".banner li").first().children().animate({"opacity":1});
+			$("ul.btn li").click(
+				function(){
+					var num2=$(this).index();
+					$("ul.banner li").eq(num2).children().stop().animate({"opacity":1}).parent().siblings().children().stop().animate({"opacity":0});
+					$("ul.btn li").eq(num2).addClass("active").siblings().removeClass("active");
+					
+					}
+			
+			)
+			var time=setInterval(move,3000)
+			var num=0;
+			var lenght=$("ul.banner li").length;
+			function move(){
+				num++;
+				if(num==lenght)
+				{num=0;}
+				$("ul.banner li").eq(num).children().stop().animate({"opacity":1}).parent().siblings().children().stop().animate({"opacity":0})
+				$("ul.btn li").eq(num).addClass("active").siblings().removeClass("active");
+				
+				}
+			$("ul.banner").hover(function(){
+				clearInterval(time);
+				}),function(){
+					time=setInterval(move,5000)
+					}
+					
+					
+					<!--banner轮播效果-->
+					
+			$("#joins ul li").hover(
+			
+				function(){
+						$(this).children(".img").children("img").stop().animate({"left":-99})
+					},function(){
+						$(this).children(".img").children("img").stop().animate({"left":0})
+						
+						}
+			
+			)
+			<!--右侧图片的效果-->
+			
+			
+	
+					
+		})
+</script>
+
+
+<body>
+<!--导航开始-->
+<div id="header">
+	<div class="nav">
+    	<ul>
+        	<li><a href="index.html">首页</a></li>
+            <li><a href="pingpaigushi.html">BRAND</a><a href="pingpaigushi.html">品牌故事</a></li>
+            <li><a href="#">SHOW</a><a href="chanpin.html">产品展示</a></li>
+            <span></span>
+            <li class="nav_you" style="margin:0;"><a href="#">JION</a><a href="#">加入我们</a></li>
+            <li class="nav_you"><a href="#">COOPERATION</a><a href="#">合作流程</a></li>
+            <li class="nav_you"><a href="#">NEWS</a><a href="#">新闻动态</a></li>
+        
+        </ul>
+    </div>
+</div>
+<!--导航结束-->
+
+<!--banner开始-->
+<div id="banner">
+	<ul class="banner">
+    	<li><a class="ban_a" href="#"></a></li>
+        <li><a class="ban_b" href="#"></a></li>
+    </ul>
+    
+    <ul class="btn">
+    	<li class="active"></li>
+        <li></li>
+    </ul>
+    
+    
+</div>
+<!--banner结束-->
+
+<!--内容开始-->
+
+<div class="pro_title">
+    	<h2>
+            P
+            <b>RODUCTS</b>
+            <font>产品展示</font>
+        </h2>
+</div>
+<div id="cont">
+	<div class="zuo">
+    
+    	<div class="zuo_tit">
+            A21专辑系列
+            <span></span>
+        </div>
+        
+        
+        <div class="zuo_tu">
+        	<ul class="tu">
+            	<li><a href="#"><img src="images/one.jpg" /></a></li>
+                <li><a href="#"><img src="images/three.jpg" /></a></li>
+                <li><a href="#"><img src="images/two.jpg" /></a></li>
+                
+            </ul>
+        	
+            <h2>A21因有范，敢不同</h2>
+            <ul class="lie">
+                <li>T恤/卫衣</li>
+                <li>外套专辑</li>
+                <li>毛衣专辑</li>
+            </ul>
+        </div>
+        
+        
+        
+    </div>
+    
+    
+    <div class="you">
+    
+    	<div class="qingchun">
+        	<a href="#">
+            	<img class="img_a" src="images/qingchun.jpg" />
+                <h2>青春Y:2品牌<span></span></h2>
+            </a>
+        </div>
+        
+        <div class="shangwu">
+        	<a href="dushi.html">
+                <h2>都市商务URBAN系列<span></span></h2>
+            	<img class="img_b" src="images/dushi.jpg" />
+            </a>
+        </div>
+        
+    </div>
+    
+</div>
+
+<!--内容结束-->
+
+<!--新闻开始-->
+
+<div class="new_title">
+    	<h2>
+            N
+            <b>EWS</b>
+            <font>新闻动态</font>
+        </h2>
+</div>
+
+<div id="news">
+	<div class="liebiao">
+    	<ul>
+        	<li>
+            	<a href="#">
+                	<h1>01</h1>
+                    <p>
+                    	时尚正能量，大众品牌中的独秀<span>2014-10.24</span>
+                    </p>
+                    <b>公司的宗旨是为顾客呈奉物超所值的优质时尚服装。致力于通过提供平价、优质的时尚服饰.....</b>
+                </a>
+            </li>
+            
+            <li>
+            	<a href="#">
+                	<h1>02</h1>
+                    <p>
+                    	时尚正能量，大众品牌中的独秀<span>2014-10.24</span>
+                    </p>
+                    <b>公司的宗旨是为顾客呈奉物超所值的优质时尚服装。致力于通过提供平价、优质的时尚服饰.....</b>
+                </a>
+            </li>
+            <li>
+            	<a href="#" style="border:none">
+                	<h1>03</h1>
+                    <p>
+                    	时尚正能量，大众品牌中的独秀<span>2014-10.24</span>
+                    </p>
+                    <b>公司的宗旨是为顾客呈奉物超所值的优质时尚服装。致力于通过提供平价、优质的时尚服饰.....</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    <div id="playBox">
+    	
+       <div class="pre"></div>
+       <div class="next"></div>
+
+        <div class="smalltitle">
+      <ul>
+        <li class="thistitle"></li>
+        <li></li>
+        <li></li>
+    
+      </ul>
+       </div>
+    	<ul class="oUlplay">
+        	<li>
+            	<a href="#"><img src="images/news_tu.jpg"/></a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/new2.jpg"/></a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/new3.jpg"/></a>
+            </li>
+        
+        </ul>
+    
+    
+    </div>
+
+
+</div>
+<!--新闻结束-->
+
+<!--关于我们-->
+
+<div class="about_title">
+    	<h2>
+            A
+            <b>BOUTS</b>
+            <font>关于我们</font>
+        </h2>
+</div>
+
+<div id="about">
+
+
+	<div class="gongsi">
+    	<div class="about_tit">
+                <h2>公司简介</h2>
+                <font></font>
+    <!--            <a href="#">
+                	 <b></b>
+                      <p>以纯最受欢迎的大众时尚品牌
+                      <br />
+       YISHION  IS THE MOST POPULAR<span>more>> </span></p>
+                     
+              </a>-->  
+              
+    <div id="container">
+    <div id="wrap-container" class="clearfix">
+    	<div class="examples_body">
+        	<ul class="bannerHolder">
+            	<li>
+                	<div class="ban">
+                    
+                    	<a href="#">
+                        	<img src="images/about_a.jpg" />
+                        
+                        </a>
+                    	<p class="companyInfo">以纯最受欢迎的大众时尚品牌 <br /><br /><br />
+       YISHION  IS THE MOST POPULAR
+       <br /><br /><br />
+       more>>
+       </p>
+                        <div class="cornerTL"></div>
+                        <div class="cornerTR"></div>
+                        <div class="cornerBL"></div>
+                        <div class="cornerBR"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+ <script>
+$(document).ready(function(){
+
+	// 0.4代表遮罩的透明度
+	$('.ban div').css('opacity',0.2);
+
+	$('.ban').hover(function(){
+	
+		var el = $(this);
+		
+		// 先淡出阴影，后淡入文字
+		el.find('div').stop().animate({width:200,height:200},'slow',function(){
+
+			el.find('p').fadeIn('fast');
+		});
+
+	},function(){
+
+		var el = $(this);
+		
+		// 隐藏文字
+		el.find('p').stop(true,true).hide();
+		
+		// 去掉遮罩
+		el.find('div').stop().animate({width:100,height:100},'fast');
+
+	}).click(function(){
+		
+		// 点击图片时打开链接
+		
+		window.open($(this).find('a').attr('href'));
+		
+	});
+});
+</script>   
+        </div>
+    </div>
+
+    
+    
+    
+	<div class="jianjie">
+    	<div class="shang">
+        	<a href="#">
+            	<em></em>
+            	<h2>品牌故事</h2>
+                <b>/</b>
+                <font>BRAND STORY</font>
+                <p>以纯乐于将最前沿的时尚资讯、潮流趋势，通过以纯的时尚服饰、社会化媒体、专卖店等渠道，分享给消费者.........</p>
+            </a>
+        
+        </div>
+        <div class="xia">
+        		<a href="#">
+            	<em></em>
+            	<h2>艺人合作</h2>
+                <b>/</b>
+                <font>ARTISTS</font>
+                <p>以纯乐于将最前沿的时尚资讯、潮流趋势，通过以纯的时尚服饰、社会化媒体、专卖店等渠道，分享给消费者.........</p>
+            </a>
+        
+        </div>
+    
+    </div>
+
+</div>
+<!--关于结束-->
+
+
+
+
+<!--加入我们-->
+<div class="join_title">
+    	<h2>
+            J
+            <b>OINS</b>
+            <font>品牌加盟</font>
+        </h2>
+</div>
+<div id="joins">
+	<div class="js_pro">
+    	<h2>YiShion Mode</h2>
+        <b class="xian_l"></b>
+        <span class="fangkuai"></span>
+        <b class="xian_r"></b>
+        <font class="ti">全方位的经营模式</font>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;互联网已经成为了以纯品牌消费者生活必不可少的一部分，而随着来社会化媒体的发展，已经为服饰品牌推广注入了新的活力。以纯顺应时代的发展，紧跟时尚的趋势，将社会化媒体的整合营销作为未来品牌发展地重点版块。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;以纯在时尚服饰品牌社会化媒体营销领域，已经走在了前列。通过积极地与消费者互动，新颖创新的社交媒体应用，以及魅力无限的时尚活动，以纯在社交媒体上如鱼得水，不断扩大影响力。</p>
+    </div>
+    <ul>
+    <li>
+    	<div class="img">
+        	<img src="images/js_a.png" />
+        </div>
+    	<a href="#">
+            <h2>服务流程</h2>
+        	<b></b>
+        	<p>Servers Process</p>
+        </a>
+    </li>
+    <li>
+    	<div class="img">
+        	<img src="images/js_b.png" />
+        </div>
+    	<a href="#">
+            <h2>营销团队</h2>
+        	<b></b>
+        	<p>INDUSTRY  TEAM</p>
+        </a>
+    </li>
+    <li style="margin-right:0;">
+    	<div class="img">
+        	<img src="images/js_c.png" />
+        </div>
+    	<a href="#">
+            <h2>服务范围</h2>
+        	<b></b>
+        	<p>Servers Network</p>
+        </a>
+    </li>
+    </ul>
+</div>
+<!--加入结束-->
+
+<!--留言开始-->
+<div class="message_title">
+    	<h2>
+            M
+            <b>ESSAGES</b>
+            <font>留言交流</font>
+        </h2>
+</div>
+<div id="messages">
+
+	<div class="dizhi">
+    	<h2>地址</h2>
+        <span></span>
+        <p>广东省东莞市虎门镇镇口第二工业区镇业路16号</p>
+    </div>
+	    
+    <div class="call">
+    	<h2>联系方式</h2>
+        <span></span>
+        <p>电话：18363086416<br />
+邮箱：zx_1024@126.com
+QQ:1358469458</p>
+    </div>
+    <div class="xinxi">
+    	<form action="" method="get">
+        	<input name="xingming" type="text" value="*姓名" />
+            <br />
+            <input type="text" value="*邮箱" />
+            <br />
+            <input type="text" value="*手机号" />
+        	<textarea name="liuyan" rows="100">*您的留言</textarea>
+            <input type="submit" class="tijiao" value="提交留言" />
+      </form>
+  </div>
+	
+</div>
+<!--留言结束-->
+
+<!--底部开始-->
+
+<div id="bottom">
+	<div class="copy">东莞市以纯集团有限公司 版权所有 Copyright © 2007-2012 YISHION all rights reserved Powered by YISHION. 粤ICP12004973号-1</div>
+    <div class="cop">技术支持：zx</div>
+</div>
+<!--底部结束-->
+
+</body>
+</html>

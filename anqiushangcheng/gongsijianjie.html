@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style/index1.css"/>
+<link rel="stylesheet" type="text/css" href="style/shangjiajiameng.css"/>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#top .t_rig li .huashang").hide();
+		$("#top .t_rig a.my").mousemove(
+			function(){
+				$(".huashang").stop().slideDown().mouseleave(function(){
+					
+						$(this).slideUp()
+					})
+				
+				}
+		)
+		
+		
+		$("#top .t_rig .gw").hide();
+		$("#top .t_rig a.go").mousemove(
+			function(){
+				$(".gw").stop().show().mouseleave(function(){
+					
+						$(this).hide();
+					})
+				
+				}
+		
+		)
+		
+		
+		})
+		
+	
+
+</script>
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<title>公司简介</title>
+</head>
+<body>
+<!--返回顶部-->
+<div id="db">
+	<ul>
+    	<li><a class="s" href="javascript::"><img src="images/t1.png" /></a></li>
+    	<li><a href="#"><img src="images/t2.png" /></a></li>
+    	<li><a href="#"><img src="images/t3.png" /></a></li>
+    	<li><a href="#"><img src="images/t4.png" /></a></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+
+$(function(){
+	
+	$(window).scroll(function(){
+		var t=$(this).scrollTop();
+		if(t>1000){
+			$("#db").fadeIn();	
+		}else{
+			$("#db").fadeOut();	
+		}
+		
+	})	
+	
+	
+	
+	
+	$(".s").click(function(){
+		$("body,html").animate({scrollTop:0})		
+	})
+	
+	
+/*	$(".top").click(function(){
+		$("body,html").animate({scrollTop:0})	
+	})*/
+	
+})
+
+
+
+</script>
+
+
+<!--头部-->
+<div id="top">
+	<div class="top_cont">
+    	<div class="t_lef">
+        	<a class="shouchang" href="#">收藏本站</a>
+            <a class="denglu" href="#">登录</a>
+            <span>|</span>
+            <a class="zhuce" href="#">免费注册</a>
+        </div>
+    	<div class="t_rig">
+        	<ul>
+            	<li><a class="first" href="#">我的订单</a></li>
+            	<li>
+                    <a class="my" href="#">我的聚优汇<span class="a"></span></a>
+                    <div class="huashang">
+                        <ul>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的评价</a></li>
+                            <li><a href="#">我的抵用劵</a></li>
+                      </ul>
+                    </div>
+                   
+                </li>
+                
+                
+            	<li>
+                    <a class="go" href="#">购物车<strong style="color:red; font-weight:100">1</strong>件<b></b><span class="a"></span></a>
+                    <div class="gw">
+                    	<ul>
+                        	<li>
+                            	<a href="#">
+                                	<img src="images/xiaotu.jpg" />
+                                    <span>眼哥重庆小面单人餐</span>
+                                    <b>￥12.2</b>
+                                </a>
+                            </li>
+<!--                            <li>
+                            	<a href="#">
+                                	<img src="images/xiaotu.jpg" />
+                                    <span>眼哥重庆小面单人餐</span>
+                                    <b>￥12.2</b>
+                                </a>
+                            </li>
+
+
+                        	<li>
+                            	<a href="#">
+                                	<img src="images/xiaotu.jpg" />
+                                    <span>眼哥重庆小面单人餐</span>
+                                    <b>￥12.2</b>
+                                </a>
+                            </li>
+
+-->    
+                        <a class="chakan" href="#">查看我的购物车</a>
+                        </ul>
+                    </div>
+                </li>
+                
+                
+            	<li><a class="last" href="#">联系客服</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div style="clear:both"></div>
+<!--搜索-->
+<div id="header">
+	<div class="h_bg">
+        <div class="logo"></div>
+        <div class="sousuo">
+            <form action="" method="get">
+            	<input class="sousuo_text" type="text" name="wenzi" value="请输入您要搜索的内容"/>
+                <input class="sousuo_anniu" type="button" value="" />
+            </form>
+            <div class="ci">
+            	<ul>
+                	<li><a href="#">汽车</a></li>
+                	<li><a href="#">房子</a></li>
+                	<li><a href="#">电冰箱</a></li>
+                	<li><a href="#">电风扇</a></li>
+                	<li><a href="#">家用电器</a></li>
+                	<li><a href="#">烤肉</a></li>
+                	<li><a href="#">牛排</a></li>
+                	<li><a href="#">西餐</a></li>
+                	<li><a href="#">自助餐</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="baozheng">
+        	<ul>
+            	<li><a href="#"><img src="images/zhengpin.jpg"  /><span>正品保障</span></a></li>
+            	<li><a href="#"><img src="images/tui.jpg"  /><span>随时退</span></a></li>
+            	<li><a href="#"><img src="images/dui.jpg" /><span>不满意免单</span></a></li>
+            	<li class="gq"><a href="#"><img src="images/guoqi.jpg" /><span>过期退</span></a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<!--导航-->
+<div id="nav">
+	<div class="nav_cont">
+    	<div class="nav_cont_left">
+        	<ul>
+            	<li><a class="ff" href="#">首页<span></span></a></li>
+            	<li><a href="#">优惠券<span></span></a></li>
+            	<li><a href="#">团购美食<span></span></a></li>
+            	<li><a href="#">团购电器<span></span></a></li>
+            	<li><a href="#">团购车<span></span></a></li>
+            	<li><a href="#">团购房<span></span></a></li>
+            	<li><a class="ll" href="#">商家加盟</a></li>
+            </ul>
+        </div>
+        <div class="nav_cont_right">
+        	<img src="images/saomiao.jpg" />
+            <div class="weixin"></div>
+        </div>
+    </div>
+</div>
+
+<!--主要内容-->
+<div id="neirong">
+   <!--售后政策-->
+	<div class="gongsi">
+    	<ul class="lie">
+        	<li class="one1">关于我们</li>
+            <li>联系我们</li>
+            <li>聚优汇承诺</li>
+        </ul>
+        
+        
+        <script type="text/javascript">
+			$(function(){
+				
+				$(".con").first().show();
+				$(".lie li").click(function(){
+					var num=$(this).index();
+					$(".con").eq(num).show().siblings(".con").hide();
+					$(this).css({"background":"#fff","border-left":"1px solid #ccc","border-right":"1px solid #ccc","border-top":"1px solid #ccc"}).siblings().css({"background":"#efefef","border":"none"});
+					})
+				$(".lie li").hover(function(){
+					$(this).addClass("two");					
+					})
+									
+				})
+				
+		</script>
+
+
+        <div class="con">
+        <p><br /></p>	
+        <p>还窝在家里，做别人眼中的宅男宅女吗？为什么不走出家门去攀岩、去K歌、去享受一顿丰盛的大餐？还在遗憾工作太忙，没时间和死党们欢聚吗？为什么不和闺蜜一起去做个SPA，或者干脆去拍套个性写真？还在纠结口袋里的银子，总觉得做个头发或美甲太贵吗？为什么不找个机会跟朋友们一起团购，杀出个痛快的价格出来？</p>
+        <br /><br />
+        <p>我们提供的解决方案是：每天把最超值的团购消费带到您身边！</p>
+        <p style="color:#00a2ff;">聚优汇商城，致力于通过团购的方式向消费者推荐高折扣的本地精品生活服务。</p>
+        <div class="dengpao">
+        	<img src="images/dengpao.jpg" />
+            <h2>对于消费者：</h2>
+            <p>我们帮您寻找最值得信赖的商家，让您享受到超低折扣的优质服务；</p>
+            <p>我们的商家信息不会有任何夸张虚假的成分，我们会保证交易的诚信和安全；</p>
+            <p>我们希望帮助你发现最新鲜最有趣的消费方式，不断发现新的惊喜。</p>
+        </div>
+        
+         <div class="dengpao">
+        	<img src="images/dengpao1.jpg" />
+            <h2>对于商家：</h2>
+            <p>我们为您寻找最热爱尝试的消费者，消费能力有所保障；</p>
+            <p>我们的推广合作方式零风险，低成本，效果显著；</p>
+            <p>我们的推广合作方式对商家的利益会进行最大程度的保障。</p>
+        </div>
+
+        </div>
+       
+        <div class="con">
+        <p><br /></p>
+        <h3>市场合作</h3>
+        <p style="background:url(images/p.jpg) left center no-repeat; text-indent:15px;">
+ 如果您是媒体、渠道，想洽谈资源置换、市场合作，请联系：
+         </p>
+         <p style="text-indent:15px;">   邮箱：marketing#meituan.com（请把#替换为@）</p>
+        <p style="background:url(images/p.jpg) left center no-repeat; text-indent:15px;">
+ 如果您是媒体、渠道，想洽谈资源置换、市场合作，请联系：
+         </p>
+         <p style="text-indent:15px;">   邮箱：marketing#meituan.com（请把#替换为@）</p>
+         
+        <h3>团购服务</h3>
+        <p style="background:url(images/p.jpg) left center no-repeat; text-indent:15px;">
+ 如果您是媒体、渠道，想洽谈资源置换、市场合作，请联系：
+         </p>
+         
+         
+        <h3>用户帮助</h3>
+        <p style="background:url(images/p.jpg) left center no-repeat; text-indent:15px;">
+ 如果您是媒体、渠道，想洽谈资源置换、市场合作，请联系：
+         </p>
+         <p style="text-indent:15px;">   邮箱：marketing#meituan.com（请把#替换为@）</p>
+         
+        <h3>提交漏洞</h3>
+        <p style="background:url(images/p.jpg) left center no-repeat; text-indent:15px;">
+ 如果您是媒体、渠道，想洽谈资源置换、市场合作，请联系：
+         </p>
+     <br /><br />    
+         <p style="font-size:12px; color:#666;">
+全国400电话：4001-527-517
+<br />客服热线：0769-2233-3456
+<br />商家入驻：sales@anqiunews.com
+<br />网址：www.anqiunews.com
+<br />地址：潍坊市安丘区桑园管理区龙樟路二区十一路1号 
+<br />电话：0769-2233-3456
+<br />传真：0769-2233-3456(5)
+<br />电邮：sales@anqiunews.com         
+         </p>
+         <br /><br />
+        </div>
+         
+    	<div class="con">
+			<h4>消费者保障服务</h4>
+            <div class="xiaofei">
+            	<img src="images/xiaofei.jpg" />
+            </div>
+            
+			<h4>1.未消费随时退款</h4>
+            <div class="xiaofei">
+            	<img src="images/xiaofei2.jpg" />
+            </div>
+            
+            <h5>以下团购商品或服务不适用"未消费随时退款"计划：</h5>
+            <p style=" font:100 12px/24px ''; color:#454545; text-indent:30px;">
+                实物类产品（需物流运送的产品）</p>
+                
+            <p style=" font:100 12px/24px ''; color:#454545; text-indent:30px;">
+            2014年3月15日前已停售的团购单标明"不支持随时退款"的产品或服务
+            </p>
+            <h5>退款说明：</h5>
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+退至美团余额：审核通过后，会在1个工作日（少量商品需要3个工作日）内把款项退回到您的美团账户。余额可在下次团购时直接冲抵现金，也可随时提现。暂
+<br />不收取手续费。
+<br />原路退回：审核通过后，会在3-10个工作日内（少量商品需额外增加3个工作日）把款项退回到您的原支付方，通过网银或支付宝等第三方支付平台进行支付的费
+<br />用将直接退到原账户，充值卡或返利金额将退回到美团余额，暂不收取手续费。               
+               </p>
+               
+            <h5>提现说明：</h5>
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+提现时间：3-10个工作日，大额提现审核需60日，审核后3-10个工作日到账
+<br />提现渠道： 
+<br />使用支付宝支付的金额，将原路退回至您的支付宝账号
+<br />使用财付通支付的金额，将原路退回至您的财付通账号
+<br />使用网上银行卡支付的金额，将原路退回至您的银行卡       </p>
+            <h5>大额提现：</h5>
+            
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+系指用户在30日内申请提现的总金额大于或等于人民币5000元的情形。
+	      </p>
+          <br />
+		<div class="dd"></div>
+        
+			<h4>2.过期未消费无条件退款</h4>
+            <div class="xiaofei">
+            	<img src="images/xiaofei3.jpg" />
+            </div>
+            
+            <h5>相关说明：</h5>
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+退至美团余额：审核通过后，会在1个工作日内（少量商品需要3个工作日）把款项退回到您的美团账户。余额可在下次团购时直接冲抵现金，也可随时提现。<br />
+原路退回：审核通过后，会在3-10个工作日内（少量商品需额外增加3个工作日）把款项退回到您的原支付方，通过网银或支付宝等第三方支付平台进行支付的费
+用<br />将直接退到原账户，充值卡或返利金额将退回到美团余额；为了感谢和回馈新老客户，过期包退暂免手续费，手续费收取办法以及相关政策，以我司事先公布<br />为准	      </p>
+            
+            
+            
+            
+            
+            <h5>以下团购商品或服务不适用"过期未消费无条件退款"计划：</h5>
+            
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+实物类产品（需物流运送的产品）
+<br />2014年3月15日前已停售的团购单标明"不支持过期退款"的产品或服务 	      </p>
+            
+            <br />
+           <div class="dd"></div>
+			<h4>3.极速退款</h4>
+            <div class="xiaofei">
+            	<img src="images/xiaofei4.jpg" />
+            </div>
+            
+            <h5>极速退款支持范围：</h5>
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+极速退款是优质商家提供的退款专享服务，仅限于页面明确标明"支持极速退款"的产品或服务。	      </p>
+            
+            <h5>极速退款说明：</h5>
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+退至美团余额：款项立即退回到您的美团账户。余额可在下次团购时直接冲抵现金，也可随时提现。
+<br />原路退回：需要通过银行或支付宝等第三方支付平台转账，暂不支持极速退款立即到账。
+<br />注：会员在使用极速退款的过程中如出现违约、诈骗等违背诚信原则的行为，将无法享受退款立即到账特权。</p>
+<br />
+            
+		<div class="dd"></div>
+			<h4>4.消费不满意，聚优汇就免单</h4>
+            <div class="xiaofei">
+            	<img src="images/xiaofei5.jpg" />
+            </div>
+            
+            <h5>"消费不满意, 美团就免单"计划的适用范围：</h5>
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+商家提供给美团会员的产品或服务与其承诺的产品或服务内容严重不符
+<br />商家提供的产品或服务经合法有效的证据证明存在严重质量问题，或有违反《中华人民共和国食品安全法》、《中华人民共和国食品安全法实施条例》、《餐饮
+
+<br />服务食品安全监督管理办法》、《中华人民共和国消费者权益保护法》的情况
+<br />美团券有效期内，商家无理拒绝接受美团会员使用美团券</p>
+<br />
+		<div class="dd"></div>
+			<h4>5.物流售后保障</h4>
+            <div class="xiaofei">
+            	<img src="images/xiaofei6.jpg" />
+            </div>
+            
+            <h5>相关说明：</h5>
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+联系商家/美团客服：收到货物后10天内优先联系商家，将有专门的客服人员为您服务，请按照客服的要求，选择拒收或寄回商品给商家，商家收到寄回商品并验<br />收合格后，美团会为您办理退款或换货<br />
+寄回商品要求：寄回商品时，请附带购买时的订单号和回寄的快递运单号，如原购买商品随带赠品或发票，请一并退回<br />
+邮费情况：已寄出的商品，非因商品质量问题而产生的退换货由用户支付邮费；因商品质量问题而产生的退换货需要您先行支付邮费，我们将在办理退款时为您<br />补偿
+</p>
+<br />
+            <h5>非因商品质量问题且存在以下情形之一的，不在退换货服务范围之内：</h5>
+            
+            <p style=" font:100 12px/24px ''; color:#454545; width:920px;height:auto; margin-left:30px; letter-spacing:0px;">
+消费者定作的<br />
+鲜活易腐的<br />
+根据商品性质并经消费者在购买时确认的不宜退货的商品			</p>
+        
+        
+        </div>
+    </div>
+    
+    
+    
+    
+<div class="nr">    
+    
+   <!--最近浏览开始-->
+		<div class="neirong_right1">
+        	<h3>最近浏览 <a href="#">清空</a></h3>
+            <div class="right1_liebiao">
+           		<ul>
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin.jpg" />
+                            <p>阿郎龙虾·阿郎火锅2人餐</p>
+                            <span><strong>￥39.9</strong> <b>131</b></span>
+                        </a>
+                    </li>
+                    
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin1.jpg" />
+                            <p>风尚桌球3.5小时台球1次，泉城路</p>
+                            <span><strong>￥9.9</strong> <b>105</b></span>
+                        </a>
+                    </li>
+
+
+
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin2.jpg" />
+                            <p>东方罗马洗浴</p>
+                            <span><strong>￥39</strong> <b>40</b></span>
+                        </a>
+                    </li>
+
+
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin3.jpg" />
+                            <p>东方明月肚皮舞-瑜伽培训肚皮舞</p>
+                            <span><strong>￥10</strong> <b>300</b></span>
+                        </a>
+                    </li>
+
+
+
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin2.jpg" />
+                            <p>齐汇维景旅游馆旅游1次</p>
+                            <span><strong>￥28</strong> <b>50</b></span>
+                        </a>
+                    </li>
+
+
+
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin3.jpg" />
+                            <p>东方罗马洗浴</p>
+                            <span><strong>￥39.9</strong> <b>131</b></span>
+                        </a>
+                    </li>
+
+
+
+                	<li>
+                        <a class="zz" href="">
+                        	<img src="images/zuijin4.jpg" />
+                            <p>东方明月肚皮舞-瑜伽培训肚皮舞</p>
+                            <span><strong>￥39.9</strong> <b>131</b></span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+</div>
+</div>
+
+
+<!--尾部开始-->
+<div style="clear:both"></div>
+<div id="footer">
+	<div class="footer_cont">
+    	<ul>
+        	<li><span></span><a href="#">关于本站</a></li>
+        	<li><span></span><a href="#">广告服务</a></li>
+        	<li><span></span><a href="#">免责声明</a></li>
+        	<li><span></span><a href="#">联系我们</a></li>
+        	<li><a href="#">人才招聘</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="foot">
+	<div class="fo_cont">
+		<div class="ff">
+        	<img src="images/e1.jpg" />
+            <h3><a href="#">购物指南</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a class="af" href="#">购物流程</a></li>
+                </ul>
+            </div>
+        </div>
+        
+		<div class="ff">
+        	<img src="images/e2.jpg" />
+            <h3><a href="#">服务保障</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a class="af" href="#">退换货服务</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="ff">
+        	<img src="images/e3.jpg" />
+            <h3><a href="#">用户帮助</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">什么是聚优汇团购</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="ff">
+        	<img src="images/e4.jpg" />
+            <h3><a href="#">售后服务</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a href="#">投诉咨询</a></li>
+                    <li><a href="#">取消订单</a></li>
+                    <li><a href="#">售后政策</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="ff">
+        	<img src="images/e5.jpg" />
+            <h3><a href="#">公司简介</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">聚优汇承诺</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="kf">
+    	
+    </div>
+    <div class="copy">
+    	©2015安丘团购 meituan.com 京ICP证070791号 京公网安备11010502025545号 电子公告服务规则
+    </div>
+    
+    <div class="rn">
+    	<ul>
+
+        	<li><a href="#"><img src="images/o1.jpg" /></a></li>
+
+        	<li><a href="#"><img src="images/o2.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o3.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o4.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o5.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o6.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o7.jpg" /></a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

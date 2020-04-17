@@ -1,0 +1,1315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style/index1.css"/>
+<link rel="stylesheet" type="text/css" href="style/meishi_xq.css"/>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#top .t_rig li .huashang").hide();
+		$("#top .t_rig a.my").mousemove(
+			function(){
+				$(".huashang").stop().slideDown().mouseleave(function(){
+					
+						$(this).slideUp()
+					})
+				
+				}
+		)
+		
+		
+		$("#top .t_rig .gw").hide();
+		$("#top .t_rig a.go").mousemove(
+			function(){
+				$(".gw").stop().show().mouseleave(function(){
+					
+						$(this).hide();
+					})
+				
+				}
+		
+		)
+		
+		
+		})
+		
+	
+
+</script>
+<link rel="stylesheet" type="text/css" href="style/style.css"/>
+
+
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<title>团购房详情</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<!--返回顶部-->
+<div id="db">
+	<ul>
+    	<li><a class="s" href="javascript::"><img src="images/t1.png" /></a></li>
+    	<li><a href="#"><img src="images/t2.png" /></a></li>
+    	<li><a href="#"><img src="images/t3.png" /></a></li>
+    	<li><a href="#"><img src="images/t4.png" /></a></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+
+$(function(){
+	
+	$(window).scroll(function(){
+		var t=$(this).scrollTop();
+		if(t>1000){
+			$("#db").fadeIn();	
+		}else{
+			$("#db").fadeOut();	
+		}
+		
+	})	
+	
+	
+	
+	
+	$(".s").click(function(){
+		$("body,html").animate({scrollTop:0})		
+	})
+	
+	
+/*	$(".top").click(function(){
+		$("body,html").animate({scrollTop:0})	
+	})*/
+	
+})
+
+
+
+</script>
+
+<!--头部-->
+<div id="top">
+	<div class="top_cont">
+    	<div class="t_lef">
+        	<a class="shouchang" href="#">收藏本站</a>
+            <a class="denglu" href="#">登录</a>
+            <span>|</span>
+            <a class="zhuce" href="#">免费注册</a>
+        </div>
+    	<div class="t_rig">
+        	<ul>
+            	<li><a class="first" href="#">我的订单</a></li>
+            	<li>
+                    <a class="my" href="#">我的聚优汇<span class="a"></span></a>
+                    <div class="huashang">
+                        <ul>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的评价</a></li>
+                            <li><a href="#">我的抵用劵</a></li>
+                      </ul>
+                    </div>
+                   
+                </li>
+                
+                
+            	<li>
+                    <a class="go" href="#">购物车<strong style="color:red; font-weight:100">1</strong>件<b></b><span class="a"></span></a>
+                    <div class="gw">
+                    	<ul>
+                        	<li>
+                            	<a href="#">
+                                	<img src="images/xiaotu.jpg" />
+                                    <span>眼哥重庆小面单人餐</span>
+                                    <b>￥12.2</b>
+                                </a>
+                            </li>
+<!--                            <li>
+                            	<a href="#">
+                                	<img src="images/xiaotu.jpg" />
+                                    <span>眼哥重庆小面单人餐</span>
+                                    <b>￥12.2</b>
+                                </a>
+                            </li>
+
+
+                        	<li>
+                            	<a href="#">
+                                	<img src="images/xiaotu.jpg" />
+                                    <span>眼哥重庆小面单人餐</span>
+                                    <b>￥12.2</b>
+                                </a>
+                            </li>
+
+-->    
+                        <a class="chakan" href="#">查看我的购物车</a>
+                        </ul>
+                    </div>
+                </li>
+                
+                
+            	<li><a class="last" href="#">联系客服</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div style="clear:both"></div>
+<!--搜索-->
+<div id="header">
+	<div class="h_bg">
+        <div class="logo"></div>
+        <div class="sousuo">
+            <form action="" method="get">
+            	<input class="sousuo_text" type="text" name="wenzi" value="请输入您要搜索的内容"/>
+                <input class="sousuo_anniu" type="button" value="" />
+            </form>
+            <div class="ci">
+            	<ul>
+                	<li><a href="#">汽车</a></li>
+                	<li><a href="#">房子</a></li>
+                	<li><a href="#">电冰箱</a></li>
+                	<li><a href="#">电风扇</a></li>
+                	<li><a href="#">家用电器</a></li>
+                	<li><a href="#">烤肉</a></li>
+                	<li><a href="#">牛排</a></li>
+                	<li><a href="#">西餐</a></li>
+                	<li><a href="#">自助餐</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="baozheng">
+        	<ul>
+            	<li><a href="#"><img src="images/zhengpin.jpg"  /><span>正品保障</span></a></li>
+            	<li><a href="#"><img src="images/tui.jpg"  /><span>随时退</span></a></li>
+            	<li><a href="#"><img src="images/dui.jpg" /><span>不满意免单</span></a></li>
+            	<li class="gq"><a href="#"><img src="images/guoqi.jpg" /><span>过期退</span></a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<!--导航-->
+<div id="nav">
+	<div class="nav_cont">
+    	<div class="nav_cont_left">
+        	<ul>
+            	<li><a class="ff" href="#">首页<span></span></a></li>
+            	<li><a href="#">优惠券<span></span></a></li>
+            	<li><a href="#">团购美食<span></span></a></li>
+            	<li><a href="#">团购电器<span></span></a></li>
+            	<li><a id="m" href="#">团购车<span></span></a></li>
+            	<li><a href="#">团购房<span></span></a></li>
+            	<li><a class="ll" href="shangjiajiameng.html">商家加盟</a></li>
+            </ul>
+        </div>
+        <div class="nav_cont_right">
+        	<img src="images/saomiao.jpg" />
+            <div class="weixin"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--主要内容-->
+<div id="meishi_xq">
+    <h3>首页  > 团购房  >  <span style="color:#ff0000;">帝华·鸿府</span></h3>
+    <h1>帝华·鸿府</h1>
+    <h2>住宅4388元/平方米，5千抵2万火爆认筹中！</h2>
+    <br />
+<script type="text/javascript">
+	$(function(){
+		$(".datu").first().show();
+		$(".lie li").hover(function(){
+			var num=$(this).index();
+			$(".datu").eq(num).show().siblings(".datu").hide();
+			$(this).css({"border":"1px solid red"}).stop().siblings().css({"border":"none"})
+			})
+			
+	
+		$(".lie li").click(function(){
+			var num=$(this).index();
+			$(".datu").eq(num).show().siblings(".datu").hide();
+			$(this).css({"border":"1px solid red"}).stop().siblings().css({"border":"none"})
+			})
+			
+			
+		$(".xx4 li").click(function(){
+			
+			$(this).css({"border":"2px solid #0cb2ff"}).stop().siblings().css({"border":"1px solid #dddddd"})
+			})
+
+	})
+</script>
+        
+    <div class="all_tu">
+    	<div class="datu">
+        	<img src="images/fa.jpg" />
+        </div>
+        
+    	<div class="datu">
+        	<img src="images/datu1.jpg" />
+        </div>
+        
+        
+    	<div class="datu">
+        	<img src="images/datu2.jpg" />
+        </div>
+        
+        
+        <ul class="lie">
+        	<li class="first">
+            	<img src="images/fa1.jpg" />
+            </li>
+            
+            <li>
+            	<img src="images/fa1.jpg" />
+            </li>
+            
+            <li class="last">
+            	<img src="images/fa1.jpg" />
+            </li>
+        </ul>
+    </div>
+    
+    <div class="tu_xq">
+    	<div class="x1ou">
+        	<h3>品牌开发经典小高层</h3>
+            <p>参考售价 &nbsp;  住宅<strong>6000</strong>  元/m2</p>
+            <p>团购折扣 &nbsp;  交5000抵2万火爆认筹中</p>
+            
+        </div>
+        <br />
+        <div class="x2">
+            <ul>
+                <li>34545人已团购</li>
+                <li>
+                	<img src="images/si.jpg" />
+                </li>
+                <li class="last">34545人已评论</li>
+            </ul>
+        </div>
+        
+        <div class="x3">
+        	<h3>有效期</h3>
+            <p>还剩  <strong>16</strong> 小时 <strong>16</strong> 分 <strong>23</strong> 秒</p>
+        </div>
+        
+        <div class="x4ou">
+        	<h3>套餐</h3>
+			<div class="xx4">
+            	<ul>
+                	<li class="first">2室2厅1卫</li>
+                	<li>1室1厅1卫</li>
+                	<li>2室2厅1卫</li>
+                	<li>2室2厅1卫</li>
+                	<li>2室2厅1卫</li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="x5ou">
+        	<h3>面积</h3>
+            <p><strong>83.00-126.00</strong>m²</p>
+        </div>
+        <br />
+        <div class="x6">
+        	<a class="qiang" href="#"></a>
+            <a class="shou" href="#"></a>
+        </div>
+        
+        <div class="x7">
+        	<h3>分享到:</h3>
+			<div class="fenxiang">
+            	<ul>
+                	<li><a href="#"><img src="images/weibo.jpg" /></a></li>
+                    <li><a href="#"><img src="images/weix.jpg" /></a></li>
+                    <li><a href="#"><img src="images/penyou.jpg" /></a></li>
+                    <li><a href="#"><img src="images/qq.jpg" /></a></li>
+                    <li class="last"><a href="#"><img src="images/jia.jpg" /></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div style="clear:both"></div>
+<div class="wu1"></div>
+<div class="wu2"></div>
+<div class="wu3"></div>
+
+<script type="text/javascript">
+	$(function(){
+		var win_w=$(window).width();
+		var win_h=$(window).height();
+		var shop_w=$("#shop").width();
+		var shop_h=$("#shop").height();
+		var shop_w1=$("#denglu").width();
+		var shop_h1=$("#denglu").height();
+
+
+
+
+		var z_l=(win_w-shop_w)/2;
+		var z_t=(win_h-shop_h)/2;
+		
+		var z_l1=(win_w-shop_w1)/2;
+		var z_t1=(win_h-shop_h1)/2;
+		
+			$(".x6 .shou").click(function(){
+				$(".body_bg").css({"display":"block","width":"100%","height":win_h});
+				$("#shop").css({"display":"block","left":z_l,"top":z_t});
+				})
+				
+				
+			$("#shop .du2").click(function(){
+				$("#shop").css({"display":"none"})
+				$(".body_bg").css({"display":"none"})
+				
+				})
+				
+			$("#shop .du4").click(function(){
+				$("#shop").css({"display":"none"})
+				$(".body_bg").css({"display":"none"})
+				
+				})
+				
+			$(".fenxiang .last").click(function(){
+				$(".body_bg").css({"display":"block","width":"100%","height":win_h});
+				$("#denglu").css({"display":"block","left":z_l1,"top":z_t1});
+				})
+				
+			$("#denglu .du9").click(function(){
+				$("#denglu").css({"display":"none"})
+				$(".body_bg").css({"display":"none"})
+				
+				})
+				
+		})
+</script>
+
+
+<!--加入购物车-->
+<div class="body_bg"></div>
+<div id="shop">
+	<span class="du1"></span>
+    <span class="du2"></span>
+    <span class="du3"></span>
+    <span class="du4"></span>
+    
+    <div class="du5">
+    	<p>成功加入购物车</p>
+        <p style=" font:100 12px/24px '';">购物车内共有1种商品</p>
+    </div>
+    <h3>看过本团购的用户还看了</h3>
+    
+      <div class="ff9">
+        	<ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/believe1.jpg" />
+                        <p>【世茂国际广场】佰烧...
+                        </p>
+                        <p class="yss">￥25  <strong><b style="color:#3e3e3e; font-weight:100;">已售</b>233</strong></p>
+                    </a>
+                </li>
+                
+                
+            	<li>
+                	<a href="#">
+                    	<img src="images/believe1.jpg" />
+                        <p>【世茂国际广场】佰烧...
+                        </p>
+                        <p class="yss">￥25  <strong><b style="color:#3e3e3e; font-weight:100;">已售</b>233</strong></p>
+                    </a>
+                </li>
+
+
+            	<li>
+                	<a href="#">
+                    	<img src="images/believe1.jpg" />
+                        <p>【世茂国际广场】佰烧...
+                        </p>
+                        <p class="yss">￥25  <strong><b style="color:#3e3e3e; font-weight:100;">已售</b>233</strong></p>
+                    </a>
+                </li>
+            </ul>
+    
+    </div>
+</div>
+<!--加入购物车结束-->
+
+
+<!--加入收藏登录-->
+<div id="denglu">
+	<h3>登录</h3>
+    <span class="du9"></span>
+    <p>帐号登录</p>
+    <form action="" method="get">
+    	<input type="text" class="yh" name="yonghuming" />
+        <br /><br />
+        <input type="text" class="mm" name="mima" />
+        <br /><br />
+        <label><input type="checkbox" class="zz" name="zi" />  7天内自动登录     <span style="color:#ff0000;">忘记密码?</span></label>
+        <label><input type="button" class="btt" value="登录" /></label>
+    </form>
+    <p class="hai">还没有帐号？ <strong style="color:#00a1ff; font-weight:100;">免费注册</strong></p>
+    <p class="hia">用合作网站帐号登录</p>
+    <ul class="hz">
+    	<li>
+            <a href="#">
+                <img src="images/r1.jpg" />
+            </a>
+                
+        </li>
+        
+        <li>
+             <a href="#">
+                <img src="images/r2.jpg" />
+            </a>
+       
+        </li>
+        
+        <li>
+    <a href="#">
+    	<img src="images/r3.jpg" />
+    </a>
+
+        
+        
+        </li>
+        
+    </ul>
+
+</div>
+
+
+<!--加入收藏登录结束-->
+
+
+
+
+<div id="ms_cont">
+	<div class="neirong_left">
+    	<div class="f">
+        	<ul>
+            	<li class="biaoti">该商家的其他团购<span class="tg">团购价</span><span class="md">门店价</span><span class="ys">已售出</span></li>
+                
+            	<li class="biaoti1">佰烧海鲜烤肉自助单人晚餐自助，提供免费WIFI<span class="tg1">￥59</span><span class="md1">￥89</span><span class="ys1">135653</span></li>
+                
+            	<li class="biaoti1">佰烧海鲜烤肉自助单人晚餐自助，提供免费WIFI<span class="tg1">￥59</span><span class="md1">￥89</span><span class="ys1">135653</span></li>
+            	<li class="biaoti1">佰烧海鲜烤肉自助单人晚餐自助，提供免费WIFI<span class="tg1">￥59</span><span class="md1">￥89</span><span class="ys1">135653</span></li>
+            	<li class="biaoti1">佰烧海鲜烤肉自助单人晚餐自助，提供免费WIFI<span class="tg1">￥59</span><span class="md1">￥89</span><span class="ys1">135653</span></li>
+            	<li class="biaoti1">佰烧海鲜烤肉自助单人晚餐自助，提供免费WIFI<span class="tg1">￥59</span><span class="md1">￥89</span><span class="ys1">135653</span></li>
+            	<li class="biaoti1">佰烧海鲜烤肉自助单人晚餐自助，提供免费WIFI<span class="tg1">￥59</span><span class="md1">￥89</span><span class="ys1">135653</span></li>
+            	<li class="biaoti1">佰烧海鲜烤肉自助单人晚餐自助，提供免费WIFI<span class="tg1">￥59</span><span class="md1">￥89</span><span class="ys1">135653</span></li>
+                
+            </ul>
+        </div>
+        
+        <div class="f1">
+        	<ul>
+            	<li><a class="sj" href="#one">楼盘位置</a></li>
+            	<li><a href="#two">楼盘户型</a></li>
+            	<li><a href="#three">周边配套</a></li>
+            	<li><a href="#four">楼盘图片</a></li>
+            	<li><a href="#five">消费评价（4234）</a></li>
+            </ul>
+        </div>
+        
+        <script type="text/javascript">
+			$(function(){
+					
+/*				$(".f1 li").hover(function(){
+					$(this).children().css({"background":"#00a2ff","color":"#fff"}).stop().parent().siblings().children().css({"background":"#f5f5f5","color":"#333"});
+					
+					},function(){
+					$(this).children().css({"background":"#f5f5f5","color":"#333"});
+						
+						})
+*/						
+				$(".f1 li").click(function(){
+					$(this).children().css({"background":"#00a2ff","color":"#fff"}).stop().parent().siblings().children().css({"background":"#f5f5f5","color":"#333"});
+					})
+						
+						
+						
+				
+				})
+		</script>
+
+        
+        
+        
+        
+        
+       <div style="clear:both"></div> 
+       <h3><a name="one" id="one"></a>楼盘位置</h3>
+		<div class="f2ou">
+       	  <div class="f2_left">
+				<a href="#">
+                	<img src="images/lou.jpg" />
+<!--                    <img class="chak" src="images/chakan.png" />
+-->                
+				</a>
+            </div>
+            
+            <div class="f2_right">
+            	<ul>
+                	<li>配套</li>
+                    <li class="two">小区配有健身设施</li>
+                	<li>环境</li>
+                    <li class="two">小区环境很好，绿化率高</li>
+                	<li>特色</li>
+                    <li class="two">小区内有河流，环境好
+</li>
+                	<li>销售信息</li>
+                    <li class="two">5千抵2万</li>
+                	<li>参数</li>
+                    <li class="two">车位比暂无资料装修情况毛坯物业费暂无数据</li>
+                </ul>
+            </div>
+        </div>        
+       <h3><a name="two" id="two"></a>购买须知</h3>
+      <br />
+       <p>1.有效期：2014.1.18 至 2015.2.27（周末、法定节假日通用）</p>
+       <p>2.预约提醒：无需预约，消费高峰时可能需要等位</p>
+       <p>3.限购限用提醒：每张美团券最多1位成人使用，身高1.5米以上儿童计入人数</p>
+       <p>4.温馨提示：身高1.2米（不含）以下儿童免费，须大人陪同，一位家长限带1位免费就餐儿童，1.2米-1.5米儿童收费为48元
+</p>
+<p style="text-indent:90px;">团购用户不可同时享受商家其他优惠</p>
+<p style="text-indent:90px;">部分菜品因时令原因有所不同，请以店内当日实际供应为准</p>
+		<p>5.商家服务：提供免费WiFi</p>
+        <p style="text-indent:90px;">停车位收费标准：计时收费</p>
+       <h3><a name="three" id="three"></a>楼盘户型</h3>
+       
+       <div class="f3ou">
+                            <!-- picrotate_left start  -->
+                <div class="blk_18"> 
+                <a class="LeftBotton" onmousedown="ISL_GoUp_1()" onmouseup="ISL_StopUp_1()" onmouseout="ISL_StopUp_1()" href="javascript:void(0);" target="_self"></a>
+                  <div class="pcont" id="ISL_Cont_1">
+                    <div class="ScrCont">
+                      <div id="List1_1">
+                        <!-- piclist begin -->
+                        <a class="pl" href="#" ><img src="images/wall1.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        <a class="pl"href="#"> <img src="images/wall2.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        <a class="pl" href="#"><img src="images/wall3.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        <a class="pl" href="#" ><img src="images/wall1.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        <a class="pl"href="#"> <img src="images/wall2.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        <a class="pl" href="#"><img src="images/wall3.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        
+                        <a class="pl" href="#" ><img src="images/wall1.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        <a class="pl"href="#"> <img src="images/wall2.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        <a class="pl" href="#"><img src="images/wall3.jpg" width="175" height="167"/>83平两室两2室2厅1卫<strong>约83.00m2</strong></a> 
+                        <!-- piclist begin -->
+                      </div>
+                      <div id="List2_1"></div>
+                    </div>
+                  </div>
+                  <a class="RightBotton" onmousedown="ISL_GoDown_1()" onmouseup="ISL_StopDown_1()" onmouseout="ISL_StopDown_1()" href="javascript:void(0);" target="_self">
+                  </a> </div>
+                
+                <script type="text/javascript">
+                        <!--
+                        picrun_ini()
+                        //-->
+                        </script>
+                <!-- picrotate_left end -->
+       </div>
+    <script type="text/javascript">
+var Speed_1 = 10; //速度(毫秒)
+var Space_1 = 20; //每次移动(px)
+var PageWidth_1 = 175 * 3; //翻页宽度
+var interval_1 = 5000; //翻页间隔时间
+var fill_1 = 0; //整体移位
+var MoveLock_1 = false;
+var MoveTimeObj_1;
+var MoveWay_1="right";
+var Comp_1 = 0;
+var AutoPlayObj_1=null;
+function GetObj(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}}
+function AutoPlay_1(){clearInterval(AutoPlayObj_1);AutoPlayObj_1=setInterval('ISL_GoDown_1();ISL_StopDown_1();',interval_1)}
+
+function ISL_GoUp_1(){if(MoveLock_1)return;clearInterval(AutoPlayObj_1);MoveLock_1=true;MoveWay_1="left";MoveTimeObj_1=setInterval('ISL_ScrUp_1();',Speed_1);}
+function ISL_StopUp_1(){if(MoveWay_1 == "right"){return};clearInterval(MoveTimeObj_1);if((GetObj('ISL_Cont_1').scrollLeft-fill_1)%PageWidth_1!=0){Comp_1=fill_1-(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1);CompScr_1()}else{MoveLock_1=false}
+AutoPlay_1()}
+function ISL_ScrUp_1(){if(GetObj('ISL_Cont_1').scrollLeft<=0){GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft+GetObj('List1_1').offsetWidth}
+GetObj('ISL_Cont_1').scrollLeft-=Space_1}
+function ISL_GoDown_1(){clearInterval(MoveTimeObj_1);if(MoveLock_1)return;clearInterval(AutoPlayObj_1);MoveLock_1=true;MoveWay_1="right";ISL_ScrDown_1();MoveTimeObj_1=setInterval('ISL_ScrDown_1()',Speed_1)}
+function ISL_StopDown_1(){if(MoveWay_1 == "left"){return};clearInterval(MoveTimeObj_1);if(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1-(fill_1>=0?fill_1:fill_1+1)!=0){Comp_1=PageWidth_1-GetObj('ISL_Cont_1').scrollLeft%PageWidth_1+fill_1;CompScr_1()}else{MoveLock_1=false}
+AutoPlay_1()}
+function ISL_ScrDown_1(){if(GetObj('ISL_Cont_1').scrollLeft>=GetObj('List1_1').scrollWidth){GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft-GetObj('List1_1').scrollWidth}
+GetObj('ISL_Cont_1').scrollLeft+=Space_1}
+function CompScr_1(){if(Comp_1==0){MoveLock_1=false;return}
+var num,TempSpeed=Speed_1,TempSpace=Space_1;if(Math.abs(Comp_1)<PageWidth_1/2){TempSpace=Math.round(Math.abs(Comp_1/Space_1));if(TempSpace<1){TempSpace=1}}
+if(Comp_1<0){if(Comp_1<-TempSpace){Comp_1+=TempSpace;num=TempSpace}else{num=-Comp_1;Comp_1=0}
+GetObj('ISL_Cont_1').scrollLeft-=num;setTimeout('CompScr_1()',TempSpeed)}else{if(Comp_1>TempSpace){Comp_1-=TempSpace;num=TempSpace}else{num=Comp_1;Comp_1=0}
+GetObj('ISL_Cont_1').scrollLeft+=num;setTimeout('CompScr_1()',TempSpeed)}}
+function picrun_ini(){
+GetObj("List2_1").innerHTML=GetObj("List1_1").innerHTML;
+GetObj('ISL_Cont_1').scrollLeft=fill_1>=0?fill_1:GetObj('List1_1').scrollWidth-Math.abs(fill_1);
+GetObj("ISL_Cont_1").onmouseover=function(){clearInterval(AutoPlayObj_1)}
+GetObj("ISL_Cont_1").onmouseout=function(){AutoPlay_1()}
+AutoPlay_1();
+}
+	</script>
+
+       <h3><a name="three" id="three"></a>周边配套</h3>
+       <div class="f4ou">
+       		<ul>
+            	<li>
+                	<p class="one">交通<span><img src="images/lu.jpg" /></span></p>
+                    <p class="two">2公里内的交通设施</p>
+                    <p class="three">19个公交站点</p>
+                    <p class="four"><img src="images/yg.jpg" /></p>
+                </li>
+                
+            	<li>
+                	<p class="one">商业<span><img src="images/lu.jpg" /></span></p>
+                    <p class="two">2公里内的交通设施</p>
+                    <p class="three">14间餐厅</p>
+                    <p class="three">16个超市</p>
+                    <p class="three">4个银行</p>
+                    <p class="four"><img src="images/yg.jpg" /></p>
+                </li>
+
+
+            	<li>
+                	<p class="one">教育<span><img src="images/lu.jpg" /></span></p>
+                    <p class="two">2公里内的交通设施</p>
+                    <p class="three">5所中学</p>
+                    <p class="three">5所中学</p>
+                    <p class="three">15所幼儿园</p>
+                    <p class="four"><img src="images/yg.jpg" /></p>
+                </li>
+
+
+            	<li style="background:none">
+                	<p class="one">医院<span><img src="images/lu.jpg" /></span></p>
+                    <p class="two">2公里内的交通设施</p>
+                    <p class="three">22所医院</p>
+                    <p class="four"><img src="images/yg.jpg" /></p>
+                </li>
+                
+                
+            </ul>
+       
+       </div>
+       <h3><a name="three" id="four"></a>楼盘图片</h3>
+       <br />
+       <p>鲜芋传奇招牌芋圆：</p>
+       
+       <div class="f3oou">
+       		<div class="f3_left">
+            	<img src="images/ou1.jpg" />
+                <p>历城-和润幸福城</p>
+            </div>
+            <div class="f3_right">
+            	<img src="images/ou2.jpg" />
+                <p>历城-和润幸福城</p>
+            </div>
+       </div>
+       
+       <div class="f3oou">
+       		<div class="f3_left">
+            	<img src="images/ou3.jpg" />
+                <p>历城-和润幸福城</p>
+            </div>
+            <div class="f3_right">
+            	<img src="images/ou4.jpg" />
+                <p>历城-和润幸福城</p>
+            </div>
+       </div>
+
+
+       <div class="f3oou">
+       		<div class="f3_left">
+            	<img src="images/ou5.jpg" />
+                <p>历城-和润幸福城</p>
+            </div>
+            <div class="f3_right">
+            	<img src="images/ou6.jpg" />
+                <p>历城-和润幸福城</p>
+            </div>
+       </div>
+       <br />
+       
+       <h3><a name="five" id="five"></a>消费评价</h3>
+       
+       <div class="f5">
+   		  <ul>
+            	<li class="first">4.8<span></span></li>
+                <li class="two">共有1223人评论</li>
+                <li class="last"><a href="#"></a></li>
+            </ul>
+       </div>
+       
+		<h1>最新评价内容</h1>
+        
+        
+        <div class="f6">
+        	<ul>
+            	<li class="one">
+                
+                	<div class="one_left">
+                		<img class="yonghu" src="images/yonghu.jpg" />
+                    </div>
+                    
+                    <div class="one_right">
+    	                <p class="p1">
+                            <span><img src="images/yonghu1.jpg" /></span>
+                            <font>2014-12-30 03:35:08</font>
+                            <b><img src="images/xx.jpg" /></b>
+                        </p>
+                        
+                        <p class="p2">
+很好，立减五元时买的，很划算。超级爱吃！希望以后还有这种活动！赞赞赞！济南有几家类似的芋圆店，相比之下还是最爱这家。百吃不厌，希望多
+推出几种不同的团购，可以尝尝别的品种，不管是冷的还是热的都很棒！               
+				         </p>
+                        <div class="chiya">
+                        	<ul>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                </li>
+                
+                
+                
+                
+            	<li class="two">
+                
+                	<div class="one_left">
+                		<img class="yonghu" src="images/yonghu.jpg" />
+                    </div>
+                    
+                    <div class="one_right">
+    	                <p class="p1">
+                            <span><img src="images/yonghu1.jpg" /></span>
+                            <font>2014-12-30 03:35:08</font>
+                            <b><img src="images/xx.jpg" /></b>
+                        </p>
+                        
+                        <p class="p2">
+很好，立减五元时买的，很划算。超级爱吃！希望以后还有这种活动！赞赞赞！济南有几家类似的芋圆店，相比之下还是最爱这家。百吃不厌，希望多
+推出几种不同的团购，可以尝尝别的品种，不管是冷的还是热的都很棒！               
+				         </p>
+                    </div>
+                    
+                </li>
+                
+                
+                
+                
+                
+            	<li class="one">
+                
+                	<div class="one_left">
+                		<img class="yonghu" src="images/yonghu.jpg" />
+                    </div>
+                    
+                    <div class="one_right">
+    	                <p class="p1">
+                            <span><img src="images/yonghu1.jpg" /></span>
+                            <font>2014-12-30 03:35:08</font>
+                            <b><img src="images/xx.jpg" /></b>
+                        </p>
+                        
+                        <p class="p2">
+很好，立减五元时买的，很划算。超级爱吃！希望以后还有这种活动！赞赞赞！济南有几家类似的芋圆店，相比之下还是最爱这家。百吃不厌，希望多
+推出几种不同的团购，可以尝尝别的品种，不管是冷的还是热的都很棒！               
+				         </p>
+                        <div class="chiya">
+                        	<ul>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            	<li><img src="images/ouu.jpg" /></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                </li>
+                
+                
+                
+            	<li class="two">
+                
+                	<div class="one_left">
+                		<img class="yonghu" src="images/yonghu.jpg" />
+                    </div>
+                    
+                    <div class="one_right">
+    	                <p class="p1">
+                            <span><img src="images/yonghu1.jpg" /></span>
+                            <font>2014-12-30 03:35:08</font>
+                            <b><img src="images/xx.jpg" /></b>
+                        </p>
+                        
+                        <p class="p2">
+很好，立减五元时买的，很划算。超级爱吃！希望以后还有这种活动！赞赞赞！济南有几家类似的芋圆店，相比之下还是最爱这家。百吃不厌，希望多
+推出几种不同的团购，可以尝尝别的品种，不管是冷的还是热的都很棒！               
+				         </p>
+                    </div>
+                    
+                </li>
+                
+                
+                
+            </ul>
+        </div>
+        
+        <div class="fenye">
+            <div class="fy_cont">
+                <ul>
+                    <li class="shang"><a href="#">上一页</a></li>
+                    <li class="xia"><a class="s2" href="#">1</a></li>
+                    <li class="xia"><a href="#">2</a></li>
+                    <li class="xia"><a href="#">3</a></li>
+                    <li class="xia"><a href="#">4</a></li>
+                    <li class="xia"><a href="#">5</a></li>
+                    <li class="xia"><a href="#">6</a></li>
+                    <li class="xia"><a href="#">7</a></li>
+                    <li class="xia"><a href="#">...</a></li>
+                    <li class="shang"><a class="s1" href="#">下一页</a></li>
+                </ul>
+            </div>
+        
+        </div>
+        
+        
+        <div style="clear:both"></div>
+        <div class="f7">
+        	<ul>
+            	<li class="one"><strong>￥</strong>15.1</li>
+                <li class="two"><b>价值</b><strong>￥25</strong></li>
+                <li class="two"><b>折扣</b><strong>6.4折</strong></li>
+                <li class="two"><b>已团购</b><strong>123人</strong></li>
+                <li class="three"><a href="#"></a></li>
+            </ul>
+        </div>
+        
+        <div class="f8">
+        	您可能感兴趣的新品团购
+            <a href="#">换一换</a>
+        </div>
+        
+        <div class="f9">
+        	<ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/believe.jpg" />
+                        <p>【世茂国际广场】佰烧海鲜烤肉
+							 自助：单人晚...
+                        </p>
+                        <p class="yss">￥25  <strong><b style="color:#3e3e3e; font-weight:100;">已售</b>233</strong></p>
+                    </a>
+                </li>
+                
+                
+            	<li>
+                	<a href="#">
+                    	<img src="images/believe.jpg" />
+                        <p>【世茂国际广场】佰烧海鲜烤肉
+							 自助：单人晚...
+                        </p>
+                        <p class="yss">￥25  <strong><b style="color:#3e3e3e; font-weight:100;">已售</b>233</strong></p>
+                    </a>
+                </li>
+
+
+            	<li>
+                	<a href="#">
+                    	<img src="images/believe.jpg" />
+                        <p>【世茂国际广场】佰烧海鲜烤肉
+							 自助：单人晚...
+                        </p>
+                        <p class="yss">￥25  <strong><b style="color:#3e3e3e; font-weight:100;">已售</b>233</strong></p>
+                    </a>
+                </li>
+
+
+            	<li class="last">
+                	<a href="#">
+                    	<img src="images/believe.jpg" />
+                        <p>【世茂国际广场】佰烧海鲜烤肉
+							 自助：单人晚...
+                        </p>
+                        <p class="yss">￥25  <strong><b style="color:#3e3e3e; font-weight:100;">已售</b>233</strong></p>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+        
+    </div>
+   <!--左边结束--> 
+    
+  <div class="nr">
+    <div class="neirong_right">
+    	<!--top1开始-->
+        <h3>看过本团购的用户还看了</h3>
+    	<div class="right_guanggao">
+            <ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/guo.jpg" />
+                        <h2>涡轮动力钛金釜电饭煲</h2>
+                        <p>七仓发货 送精美原木餐具</p>
+                        <h4>￥<font>499</font><b>￥2498</b><span>2344人团购</span></h4>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    	<!--top1结束-->
+        
+        
+            	<!--top1开始-->
+        <h3></h3>
+                <br />
+
+    	<div class="right_guanggao">
+            <ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/guo.jpg" />
+                        <h2>涡轮动力钛金釜电饭煲</h2>
+                        <p>七仓发货 送精美原木餐具</p>
+                        <h4>￥<font>499</font><b>￥2498</b><span>2344人团购</span></h4>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    	<!--top1结束-->
+
+
+
+
+    	<!--top1开始-->
+        <h3></h3>
+                <br />
+
+    	<div class="right_guanggao">
+            <ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/guo.jpg" />
+                        <h2>涡轮动力钛金釜电饭煲</h2>
+                        <p>七仓发货 送精美原木餐具</p>
+                        <h4>￥<font>499</font><b>￥2498</b><span>2344人团购</span></h4>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    	<!--top1结束-->
+
+        
+    	<!--top1开始-->
+        <h3></h3>
+                <br />
+
+    	<div class="right_guanggao">
+            <ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/guo.jpg" />
+                        <h2>涡轮动力钛金釜电饭煲</h2>
+                        <p>七仓发货 送精美原木餐具</p>
+                        <h4>￥<font>499</font><b>￥2498</b><span>2344人团购</span></h4>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    	<!--top1结束-->
+
+
+
+    	<!--top1开始-->
+        <h3></h3>
+                <br />
+
+    	<div class="right_guanggao">
+            <ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/guo.jpg" />
+                        <h2>涡轮动力钛金釜电饭煲</h2>
+                        <p>七仓发货 送精美原木餐具</p>
+                        <h4>￥<font>499</font><b>￥2498</b><span>2344人团购</span></h4>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    	<!--top1结束-->
+
+
+
+    	<!--top1开始-->
+        <h3></h3>
+                <br />
+
+    	<div class="right_guanggao">
+            <ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/guo.jpg" />
+                        <h2>涡轮动力钛金釜电饭煲</h2>
+                        <p>七仓发货 送精美原木餐具</p>
+                        <h4>￥<font>499</font><b>￥2498</b><span>2344人团购</span></h4>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    	<!--top1结束-->
+
+
+
+    	<!--top1开始-->
+        <h3></h3>
+                <br />
+
+    	<div class="right_guanggao">
+            <ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/guo.jpg" />
+                        <h2>涡轮动力钛金釜电饭煲</h2>
+                        <p>七仓发货 送精美原木餐具</p>
+                        <h4>￥<font>499</font><b>￥2498</b><span>2344人团购</span></h4>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    	<!--top1结束-->
+
+
+
+    	<!--top1开始-->
+        <h3></h3>
+        <br />
+    	<div class="right_guanggao">
+            <ul>
+            	<li>
+                	<a href="#" style="border-bottom:none;">
+                    	<img src="images/guo.jpg" />
+                        <h2>涡轮动力钛金釜电饭煲</h2>
+                        <p>七仓发货 送精美原木餐具</p>
+                        <h4>￥<font>499</font><b>￥2498</b><span>2344人团购</span></h4>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    	<!--top1结束-->
+
+    </div>
+    <!--右边内容结束-->
+    
+    <!--最近浏览开始-->
+
+		<div class="neirong_right1">
+        	<h3>最近浏览 <a href="#">清空</a></h3>
+            <div class="right1_liebiao">
+           		<ul>
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin.jpg" />
+                            <p>阿郎龙虾·阿郎火锅2人餐</p>
+                            <span><strong>￥39.9</strong> <b>131</b></span>
+                        </a>
+                    </li>
+                    
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin1.jpg" />
+                            <p>风尚桌球3.5小时台球1次，泉城路</p>
+                            <span><strong>￥9.9</strong> <b>105</b></span>
+                        </a>
+                    </li>
+
+
+
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin2.jpg" />
+                            <p>东方罗马洗浴</p>
+                            <span><strong>￥39</strong> <b>40</b></span>
+                        </a>
+                    </li>
+
+
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin3.jpg" />
+                            <p>东方明月肚皮舞-瑜伽培训肚皮舞</p>
+                            <span><strong>￥10</strong> <b>300</b></span>
+                        </a>
+                    </li>
+
+
+
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin2.jpg" />
+                            <p>齐汇维景旅游馆旅游1次</p>
+                            <span><strong>￥28</strong> <b>50</b></span>
+                        </a>
+                    </li>
+
+
+
+                	<li>
+                        <a href="">
+                        	<img src="images/zuijin3.jpg" />
+                            <p>东方罗马洗浴</p>
+                            <span><strong>￥39.9</strong> <b>131</b></span>
+                        </a>
+                    </li>
+
+
+
+                	<li>
+                        <a class="zz" href="">
+                        	<img src="images/zuijin4.jpg" />
+                            <p>东方明月肚皮舞-瑜伽培训肚皮舞</p>
+                            <span><strong>￥39.9</strong> <b>131</b></span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+	</div>  
+
+
+
+</div>
+
+
+
+
+
+
+<!--尾部开始-->
+<div style="clear:both"></div>
+<div id="footer">
+	<div class="footer_cont">
+    	<ul>
+        	<li><span></span><a href="#">关于本站</a></li>
+        	<li><span></span><a href="#">广告服务</a></li>
+        	<li><span></span><a href="#">免责声明</a></li>
+        	<li><span></span><a href="#">联系我们</a></li>
+        	<li><a href="#">人才招聘</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="foot">
+	<div class="fo_cont">
+		<div class="ff">
+        	<img src="images/e1.jpg" />
+            <h3><a href="gouwuliucheng.html">购物指南</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a class="af" href="gouwuliucheng.html">购物流程</a></li>
+                </ul>
+            </div>
+        </div>
+        
+		<div class="ff">
+        	<img src="images/e2.jpg" />
+            <h3><a href="tuihuanhuofuwu.html">服务保障</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a class="af" href="tuihuanhuofuwu.html">退换货服务</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="ff">
+        	<img src="images/e3.jpg" />
+            <h3><a href="changjianwenti.html">用户帮助</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a href="changjianwenti.html">常见问题</a></li>
+                    <li><a href="changjianwenti.html">什么是聚优汇团购</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="ff">
+        	<img src="images/e4.jpg" />
+            <h3><a href="shouhouzhengce.html">售后服务</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a href="#">投诉咨询</a></li>
+                    <li><a href="#">取消订单</a></li>
+                    <li><a href="#">售后政策</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="ff">
+        	<img src="images/e5.jpg" />
+            <h3><a href="gongsijianjie.html">公司简介</a></h3>
+            <div class="ffa">
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">聚优汇承诺</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="kf">
+    	
+    </div>
+    <div class="copy">
+    	©2015安丘团购 meituan.com 京ICP证070791号 京公网安备11010502025545号 电子公告服务规则
+    </div>
+    
+    <div class="rn">
+    	<ul>
+
+        	<li><a href="#"><img src="images/o1.jpg" /></a></li>
+
+        	<li><a href="#"><img src="images/o2.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o3.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o4.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o5.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o6.jpg" /></a></li>
+        	<li><a href="#"><img src="images/o7.jpg" /></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

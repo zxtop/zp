@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1{width: 100px;height: 100px;background: red;position: absolute;left: 0px;top: 0px;}
+    </style>
+</head>
+<body>
+    <script>
+
+
+/*  
+       window.onload=function(){
+            var odiv=document.getElementById("div1");
+            var disX=dixY=null;
+            odiv.onmousedown=function(ev){
+                var ev=ev||window.event;
+                disX=ev.clientX-odiv.offsetLeft;
+                disY=ev.clientY-odiv.offsetTop;
+                document.onmousemove=function(ev){
+                    var ev=ev||window.event;
+                    odiv.style.left=ev.clientX-disX+'px';
+                    odiv.style.top=ev.clientY-disY+'px';
+                }
+                document.onmouseup=function(){
+                    document.onmousemove=null;
+                    document.onmouseup=null;
+                }
+                return false;
+            }
+        }
+ */
+
+//  改成普通方法
+
+/* window.onload=function(){
+    var odiv=document.getElementById("div1");
+    var disX=dixY=null;
+    init();
+   
+}
+function init(){
+     odiv.onmousedown=fnDown;
+}
+function fnDown(ev){
+    var ev=ev||window.event;
+        disX=ev.clientX-odiv.offsetLeft;
+        disY=ev.clientY-odiv.offsetTop;
+        document.onmousemove=fnMove;
+        document.onmouseup=fnUp;
+        return false;
+}
+function fnMove(ev){
+    var ev=ev||window.event;
+    odiv.style.left=ev.clientX-disX+'px';
+    odiv.style.top=ev.clientY-disY+'px';
+
+}
+
+function fnUp(){
+    document.onmousemove=null;
+    document.onmouseup=null;
+}
+ */
+
+//  改成面向对象
+// 注意在更改this指向的时候的ev是要出现在事件函数里面，上级嵌套了一层函数，ev要提到上级去；
+
+window.onload=function(){
+    var dl=new Dl('div1');
+    dl.init();
+}
+function Dl(id){
+    this.odiv=document.getElementById(id);
+    this.disX=dixY=null;
+}
+
+Dl.prototype.init=function(){
+    var This=this;
+    this.odiv.onmousedown=function(ev){
+        var ev=ev||window.event;
+        This.fnDown(ev);
+        return false;
+    }
+}
+
+Dl.prototype.fnDown=function(ev){
+    var This=this;
+    
+    this.disX=ev.clientX-this.odiv.offsetLeft;
+    this.disY=ev.clientY-this.odiv.offsetTop;
+    document.onmousemove=function(){
+        var ev=ev||window.event;
+        This.fnMove(ev);
+    }
+    document.onmouseup=this.fnUp;
+    
+}
+
+Dl.prototype.fnMove=function(ev){
+    
+    this.odiv.style.left=ev.clientX-this.disX+'px';
+    this.odiv.style.top=ev.clientY-this.disY+'px';
+}
+
+Dl.prototype.fnUp=function(){
+    document.onmousemove=null;
+    document.onmouseup=null;
+}
+
+
+
+</script>
+
+
+    <div id="div1"></div>
+
+
+</body>
+</html>

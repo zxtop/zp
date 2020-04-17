@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            #div1 div,#div2 div{width: 200px;height: 200px;border:1px solid #ccc;display: none;}
+            .active{background: red;color: #fff;}
+    </style>
+
+    </head>
+<body>
+    <script>
+        window.onload=function(){
+            var tab1=new Tab('div1');
+            tab1.init();
+            var tab2=new Tab('div2');
+            tab2.init();
+            tab2.autoplay();
+        }
+
+        function Tab(id){
+            this.odiv=document.getElementById(id)
+            this.ainput=this.odiv.getElementsByTagName("input");
+            this.adiv=this.odiv.getElementsByTagName("div");
+            this.inow=0;
+
+        }
+        Tab.prototype.init=function(){
+            var This=this;
+            for(var i=0;i<this.ainput.length;i++){
+
+                this.ainput[i].index=i;
+
+                this.ainput[i].onclick=function(){
+                    This.change(this);
+                }
+            }
+
+        }
+
+        Tab.prototype.change=function(obj){
+            for(var i=0;i<this.ainput.length;i++){
+                this.ainput[i].className='';
+                this.adiv[i].style.display='none';
+            }
+            obj.className="active";
+            this.adiv[obj.index].style.display='block'
+        }
+
+
+        Tab.prototype.autoplay=function(){
+            var This=this;
+            setInterval(function(){
+                
+                if(This.inow==This.ainput.length-1){
+                    This.inow=0;
+                }else{
+                    This.inow++;
+                }
+                for(var i=0;i<This.ainput.length;i++){
+                    This.ainput[i].className='';
+                    This.adiv[i].style.display='none';
+                }
+                This.ainput[This.inow].className="active";
+                This.adiv[This.inow].style.display='block'
+
+            },3000)
+        }
+
+
+    </script>
+
+<div id="div1">
+        
+<input class="active" type="button" value="1">
+<input type="button" value="2">
+<input type="button" value="3">
+
+<div style="display:block">1111</div>
+<div>2222</div>
+<div>3333</div>
+
+</div>
+  
+
+<div id="div2">
+        
+<input class="active" type="button" value="1">
+<input type="button" value="2">
+<input type="button" value="3">
+
+<div style="display:block">1111</div>
+<div>2222</div>
+<div>3333</div>
+
+</div>
+
+</body>
+</html>

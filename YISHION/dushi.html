@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>都市系列</title>
+<link rel="stylesheet" type="text/css" href="css/css.css"/>
+<link rel="stylesheet" type="text/css" href="css/dushi.css"/>
+<link rel="stylesheet" type="text/css" href="css/lrtk.css"/>
+</head>
+
+<body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		$(".nav li").hover(
+			function(){
+				$(this).children("a:odd").css({"background":"#AE1C1C"})
+				$(this).stop().animate({"top":"-80px"})
+				$(".nav li").eq(0).stop().css({"top":0});
+				
+			
+				},function(){
+					
+				$(this).stop().animate({"top":"0px"})
+					}
+		
+		)<!--导航的效果添加-->
+		$("ul.tu li").first().show();
+		
+		$("ul.lie li").hover(
+			function(){
+				var num=$(this).index();
+				$("ul.tu li").eq(num).fadeIn().siblings("ul.tu li").fadeOut();
+				$(this).stop().animate({"padding-left":"40px"});
+				},function(){
+					$(this).stop().animate({"padding-left":"28px"},500);
+					
+					}
+		
+		)<!--左侧小图片的展示-->
+		
+		var l=($(window).width()-$(".btn").width())/2;
+		$(".btn").css({"left":l});
+		$(window).resize(
+			function(){
+				var l=($(window).width()-$(".btn").width())/2;
+				$(".btn").css({"left":l});
+				}
+		)
+		$(".banner li").first().children().animate({"opacity":1});
+			$("ul.btn li").click(
+				function(){
+					var num2=$(this).index();
+					$("ul.banner li").eq(num2).children().stop().animate({"opacity":1}).parent().siblings().children().stop().animate({"opacity":0});
+					$("ul.btn li").eq(num2).addClass("active").siblings().removeClass("active");
+					
+					}
+			
+			)
+			var time=setInterval(move,3000)
+			var num=0;
+			var lenght=$("ul.banner li").length;
+			function move(){
+				num++;
+				if(num==lenght)
+				{num=0;}
+				$("ul.banner li").eq(num).children().stop().animate({"opacity":1}).parent().siblings().children().stop().animate({"opacity":0})
+				$("ul.btn li").eq(num).addClass("active").siblings().removeClass("active");
+				
+				}
+			$("ul.banner").hover(function(){
+				clearInterval(time);
+				}),function(){
+					time=setInterval(move,5000)
+					}
+					
+					
+					<!--banner轮播效果-->
+					
+			$("#joins ul li").hover(
+			
+				function(){
+						$(this).children(".img").children("img").stop().animate({"left":-99})
+					},function(){
+						$(this).children(".img").children("img").stop().animate({"left":0})
+						
+						}
+			
+			)
+			<!--右侧图片的效果-->
+			
+			
+	
+					
+		})
+</script>
+
+<!--导航开始-->
+<div id="header">
+	<div class="nav">
+    	<ul>
+        	<li><a href="index.html">首页</a></li>
+            <li><a href="pingpaigushi.html">BRAND</a><a href="pingpaigushi.html">品牌故事</a></li>
+            <li><a href="#">SHOW</a><a href="#">产品展示</a></li>
+            <span></span>
+            <li class="nav_you" style="margin:0;"><a href="#">JION</a><a href="#">加入我们</a></li>
+            <li class="nav_you"><a href="#">COOPERATION</a><a href="#">合作流程</a></li>
+            <li class="nav_you"><a href="#">NEWS</a><a href="#">新闻动态</a></li>
+        
+        </ul>
+    </div>
+</div>
+<!--导航结束-->
+
+<!--banner开始-->
+<div id="banner">
+	<ul class="banner">
+    	<li><a class="ban_a" href="#"></a></li>
+        <li><a class="ban_b" href="#"></a></li>
+    </ul>
+    
+    <ul class="btn">
+    	<li class="active"></li>
+        <li></li>
+    </ul>
+    
+    
+</div>
+<!--banner结束-->
+
+
+
+<!--内容开始-->
+	<div id="cont">
+    	<div class="wenzi1">
+        	<h2>URBAN系列是以纯为现代精英男性时尚诉求而精心<br />
+打造的轻奢男装新锐品牌</h2>
+            <span></span>
+            <p>英伦 | 马甲 是品牌的个性主张<br />
+格子流行风格，不失潮流<br />
+自然、优雅、含蓄、高贵<br />
+运用苏格兰格子、良好的剪裁以及简洁修身的设计，体现绅士风度与贵族气质，个别带有欧洲学院风的味道</p>
+        </div>
+    	
+        <div class="zoomybox">
+        	<a class="zoom" href="images/lucyZoom.jpg"><img src="images/lucyTn.jpg" /></a>
+        </div>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.zoomy0.5.min.js"></script>
+<script type="text/javascript">
+//This is it
+$(function(){    
+	$('.zoom').zoomy();
+});
+</script>
+        
+        <div class="wenzi2">
+        	<h2>LOOK OPTION
+        Style</h2>
+            <span></span>
+            <p>优秀的设计团队打破了以往服装设计的局限，用建筑学的理念
+            <br />编织出绝妙的纹饰，赋予西服新姿态，成为时尚的盔甲。
+            <br />
+    优质混纺软泥光洁平整光泽莹亮，柔软厚实挺括抗皱，
+    <br />保暖性极佳，英伦贵族气质的复古小立领，PU领面彰显不羁<br />
+    柔软囊皮袖山解构分割，视觉立体提升硬朗之气，<br />
+    唯美贵气的弧线门襟紧凑三粒扣设计，线条柔和优雅独具浪漫气质
+    <br />单开骑马叉独具绅士风度</p>
+        </div>
+        
+  <!--         <div class="chanpin2">
+        
+        </div>-->
+        
+        <div class="zoomybox1">
+        	<a class="zoom1" href="images/c22.jpg"><img src="images/c2.jpg" /></a>
+        </div>
+        <script type="text/javascript">
+//This is it
+$(function(){    
+	$('.zoom1').zoomy();
+});
+</script>
+        
+        <!--   <div class="chanpin3">
+        
+        </div>-->
+          <div class="zoomybox2">
+        	<a class="zoom2" href="images/c33.jpg"><img src="images/c3.jpg" /></a>
+        </div>
+ 
+
+        <script type="text/javascript">
+//This is it
+$(function(){    
+	$('.zoom2').zoomy();
+});
+</script>
+        <div class="wenzi3">
+        	 	<h2>ONE
+        Fashion slim</h2>
+            <span></span>
+            <p>优秀的设计团队打破了以往服装设计的局限，用建筑学的理念
+            <br />编织出绝妙的纹饰，赋予西服新姿态，成为时尚的盔甲。
+            <br />
+    优质混纺软泥光洁平整光泽莹亮，柔软厚实挺括抗皱，
+    <br />保暖性极佳，英伦贵族气质的复古小立领，PU领面彰显不羁<br />
+    柔软囊皮袖山解构分割，视觉立体提升硬朗之气，<br />
+    唯美贵气的弧线门襟紧凑三粒扣设计，线条柔和优雅独具浪漫气质
+    <br />单开骑马叉独具绅士风度</p>
+        </div>
+    
+    </div>
+	
+
+
+<!--内容结束-->
+
+
+<!--底部开始-->
+
+<div id="bottom1">
+	<div class="copy">东莞市以纯集团有限公司 版权所有 Copyright © 2007-2012 YISHION all rights reserved Powered by YISHION. 粤ICP12004973号-1</div>
+    <div class="cop">技术支持：zx</div>
+</div>
+<!--底部结束-->
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>品牌简介</title>
+<link rel="stylesheet" type="text/css" href="css/pinpai.css"/>
+</head>
+
+<body>
+<!--导航开始-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+			$(".nav li").hover(
+				function(){
+					$(this).children("a:odd").css({"background":"#AE1C1C"})
+					$(this).stop().animate({"top":"-80px"})
+					$(".nav li").eq(0).stop().css({"top":0})
+					},function(){
+					$(this).stop().animate({"top":"0px"})
+						}
+			)
+		
+		
+		})
+
+</script>
+	<div id="header">
+    	<div class="nav">
+        	<ul>
+            	<li><a href="index.html">首页</a></li>
+                <li><a>BRAND</a><a href="#">品牌故事</a></li>
+                <li><a>SHOW</a><a href="#">产品展示</a></li>
+                <span></span>
+                <li class="nav_you"><a>NEWS</a><a href="#">新闻动态</a></li>
+                <li class="nav_you"><a>COOPERATION</a><a href="#">合作流程</a></li>
+                <li class="nav_you"><a>JOIN</a><a href="#">加入我们</a></li>
+            </ul >
+          </div>
+    </div>
+<!--导航结束-->
+
+<!--banner开始-->
+	<div id="banner">
+    	<ul class="banner">
+        	<li><a class="ban_a" href="#"></a></li>
+            <li><a class="ban_b" href="#"></a></li>
+        </ul>
+        
+        <ul class="btn">
+        	<li class="active"></li>
+            <li></li>
+        </ul>
+    </div>
+    
+   <script type="text/javascript">
+   		$(function(){
+			var l=($(window).width()-$(".btn").width())/2;
+			$(".btn").css({"left":l})
+			$(window).resize(
+				function(){
+								var l=($(window).width()-$(".btn").width())/2;
+								$(".btn").css({"left":l})
+
+					}
+			)
+			$(".banner li").first().children().animate({"opacity":1});
+				$("ul.btn li").click(
+					function(){
+						var num2=$(this).index();
+						$("ul.banner li").eq(num2).children().stop().animate({"opacity":1}).parent().siblings().children().stop().animate({"opacity":0});
+						$("ul.btn li").eq(num2).addClass("active").siblings().removeClass("active");
+						}
+				
+				)
+				var time=setInterval(move,3000)
+				var num=0;
+				var lenght=$("ul.banner li").length;
+				function move(){
+					num++;
+					if(num==lenght){
+						num=0;
+						}
+						$("ul.banner li").eq(num).children().stop().animate({"opacity":1}).parent().siblings().children().stop().animate({"opacity":0});
+						$("ul.btn li").eq(num).addClass("active").siblings().removeClass("active");
+					
+					}
+				$("ul.banner").hover(
+				
+					function(){
+						
+						clearInterval(time);
+						}
+				),function(){
+					time=setInterval(move,5000)
+					}
+			
+			})
+   
+   </script>
+
+<!--banner结束-->
+
+
+<!--内容-->
+<div id="cont">    
+    <!--左侧导航-->
+    <div id="con_zuo">
+<ul>
+            <li><a href="#" class="hove">公司简介<span></span></a></li>
+            <script type="text/javascript" >
+            	$(function(){
+					$("#con_zuo li a").hover(
+						function(){
+							$(this).addClass("hove").parent().siblings().children().removeClass("hove");
+							
+							}
+					)
+					})
+            </script>
+
+            <li><a href="#">品牌历史<span></span></a></li>
+            <li><a href="#">品牌宣言<span></span></a></li>
+            <li><a href="#">艺人合作<span></span></a></li>
+            <li><a href="#">品牌新闻<span></span></a></li>
+        </ul>
+        
+        <div class="zuo_xia">
+        	<h2>Shop show / MORE</h2>
+        </div>
+    </div>
+    <!--左侧导航结束-->
+    
+    
+    <!--右侧内容开始-->
+    	<div class="wenzi">
+        	<h2>Company Introduction</h2>
+            <span></span>
+            <font><a href="index.html">返回>></a></font>
+            <p>   &nbsp;&nbsp;"以纯"是东莞市以纯集团有限公司时尚品牌，是国内时尚休闲服饰领先品牌。受到现在中国多区域、多元素、多文化生活方式的影响，以"爱"的名义，把时尚、活力、自由的精神逐渐融入到"以纯"的设计当中，逐渐演变成中国时尚都市风格的年轻化代表。依托高质量的产品、先进的CAD生产系统和日臻完善的营销体系，在全国拥有"以纯"专卖店千余家，销售点遍布全国28省市自治区，且已成功拓展至东南亚南亚中东与部分欧洲市场。
+   <br />&nbsp;&nbsp;以纯以实体企业自有工厂，结合快速的物流链，能做到真正的快速反应，在处理库存、换季抢时机等方面具有优势。在服饰行业，崇尚"轻资产，重品牌"模式的今天，还能重视生产及质量的品牌，坚持做产业链的企业，并不多见！</p>
+        </div>
+        
+        <div class="tu">
+        	
+        </div>
+        
+        <div class="fendian">
+			<ul>
+            	<li class="bb"><a href="#" class="ch">@时尚YISHION北京站</a></li>
+
+                <li class="bb"><a href="#">@时尚YISHION北京站</a></li>
+                <li class="bb"><a href="#">@时尚YISHION北京站</a></li>
+                <li class="bb"><a href="#">@时尚YISHION北京站</a></li>
+            </ul>
+        </div>
+           <span class="a1"></span>
+       		<ul class="zhanshi">
+            	<li class="tt"><img src="images/fd.jpg"/></li>
+                <li class="tt"><img src="images/fd1.jpg" /></li>
+                <li class="tt"><img src="images/fd2.jpg" /></li>
+                <li class="tt"><img src="images/fd3.jpg" /></li>
+            </ul>
+                   <script type="text/javascript">
+                	$(function(){
+							$(".tt").first().show();
+							$("#cont .fendian ul li a").hover(
+								function(){
+							var n=$("#cont .fendian ul li").index();
+							$(this).addClass("ch").parent().siblings().children().removeClass("ch");
+							<!--$(".tt").eq(numb).stop().show().siblings(".tt").stop().hide();-->
+									}
+							)
+							$("li.bb").hover(
+								function(){
+									var n=$(this).index();
+									$("li.tt").eq(n).stop().fadeIn().siblings("li.tt").stop().fadeOut();
+									}
+							)
+						
+						})
+                </script>
+            <ul class="zi">
+            	<li>北京站以纯分店成立时间：2014-10-01<br />
+										员工人数：8人<br />
+						店面设计：小明
+                 </li>
+                 
+                 <li>上海站以纯分店成立时间：2014-10-01<br />
+										员工人数：10人<br />
+						店面设计：张国立<br />
+                           经理:王丽
+                 </li>
+                 
+                   <li>广州站以纯分店成立时间：2014-10-01<br />
+										员工人数：11人<br />
+						店面设计：冯幸
+                 </li>
+                   <li>山东站以纯分店成立时间：2014-10-01<br />
+										员工人数：13人<br />
+						店面设计：小明
+                 </li>
+                 
+
+            </ul>
+            
+            <script type="text/javascript">
+            	$(function(){
+						$(".zi li").first().show();
+							$("li.bb").hover(
+								function(){
+									var n=$(this).index();
+									$(".zi li").eq(n).stop().fadeIn().siblings(".zi li").stop().fadeOut();
+
+									}
+							)
+					
+					})
+            </script>
+
+            
+            <ul class="btn_you">
+            	<li class="shang"></li>
+                <li class="xia"></li>
+            </ul>
+            
+            <script type="text/javascript">
+            	$(function(){
+					var m1=0;
+					var a1=$(".zi li").length;
+					var len=$(".zi li").length;
+					$(".btn_you .xia").click(
+						function(){
+							m1++;
+							if(m1==len){m1=0;}
+							$(".zi li").eq(m1).stop().fadeIn().siblings(".zi li").stop().fadeOut();
+							$("li.tt").eq(m1).stop().fadeIn().siblings("li.tt").stop().fadeOut();
+							$("#cont .fendian ul li a").eq(m1).addClass("ch").parent().siblings().children().removeClass("ch");
+
+							}
+					
+					)
+					
+					
+					$(".btn_you .shang").click(
+						function(){
+							a1--;
+							if(a1==0){a1=len;}
+							$(".zi li").eq(a1).stop().fadeIn().siblings(".zi li").stop().fadeOut();
+							$("li.tt").eq(a1).stop().fadeIn().siblings("li.tt").stop().fadeOut();
+							$("#cont .fendian ul li a").eq(a1).addClass("ch").parent().siblings().children().removeClass("ch");
+
+							}
+					
+					)
+					
+					})
+            
+            </script>
+
+    <!--右侧内容结束-->
+</div>
+<!--内容结束-->
+
+
+
+<!--底部开始-->
+
+<div id="bottom">
+	<div class="copy">东莞市以纯集团有限公司 版权所有 Copyright © 2007-2012 YISHION all rights reserved Powered by YISHION. 粤ICP12004973号-1</div>
+    <div class="cop">技术支持：zx</div>
+</div>
+<!--底部结束-->
+</body>
+</html>

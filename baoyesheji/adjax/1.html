@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+			<!-- 添加 -->
+			<div class="boxs">
+				<ul>
+
+					<li>
+						<a href="#" class="imgs">
+							<img src="images/index.jpg" height="107" width="171" alt="">			
+						</a>
+						<div class="rt">
+							<span>2015/10/14</span>
+							<p class="ps">绍兴市人民政府办公室关于加快推进...</p>
+							<div class="say">
+								<a href="#">各区、县（市）人民政府，市政府有关部门、有关单位： 2014年 5月...</a>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="#" class="imgs">
+							<img src="images/index.jpg" height="107" width="171" alt="">			
+						</a>
+						<div class="rt">
+							<span>2015/10/14</span>
+							<p class="ps">安徽市人民政府办公室关于加快推进...</p>
+							<div class="say">
+								<a href="#">各区、县（市）人民政府，市政府有关部门、有关单位： 2014年 5月...</a>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="#" class="imgs">
+							<img src="images/index.jpg" height="107" width="171" alt="">			
+						</a>
+						<div class="rt">
+							<span>2015/10/14</span>
+							<p class="ps">浙江市人民政府办公室关于加快推进...</p>
+							<div class="say">
+								<a href="#">各区、县（市）人民政府，市政府有关部门、有关单位： 2014年 5月...</a>
+							</div>
+						</div>
+					</li>
+
+
+				</ul>
+
+
+				<div class="btns">
+					<a href="javascript:void(0)" class="hoves"></a>
+					<a href="javascript:void(0)" ></a>
+					<a href="javascript:void(0)" ></a>
+
+				</div>
+			</div>
+		<!-- 添加 -->
+<script type="text/javascript">
+	$(".btns a").click(function(){
+        var index=$(this).index();
+        $(this).addClass('hoves').siblings().removeClass('hoves');
+        $(".boxs ul").animate({
+            marginLeft:index*-1066+"px"
+        },600,function(){
+            j();
+        })
+    })
+
+    
+
+    function j(){
+        var btns=$(".btns");
+        var len=btns.children().length;
+        btns.css({
+            width:len*34+"px"
+        })
+    }
+
+    j();
+</script>
+</body>
+</html>

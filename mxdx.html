@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 div{width: 200px;height: 200px;border:1px solid #ccc;display: none;}
+        .active{background: red;color: #fff;}
+    </style>
+</head>
+<body>
+    <!-- 
+        一开始的时候就写面对对象的方式，一般不知道从哪里入手，所以我们先用传统的普通方法变形过去，那么：
+        有几个原则需要注意：
+        1,尽量不要出现函数嵌套函数
+        2，可以有全局变量
+        3，把onload中不是赋值语句的单独放到单独函数中
+     -->
+<script type="text/javascript">
+
+        // 普通函数的写法如下
+
+/* 
+        window.onload=function(){
+
+            var odiv=document.getElementById("div1");
+            var ainput=odiv.getElementsByTagName("input");
+            var adiv=odiv.getElementsByTagName("div");
+            for(var i=0;i<ainput.length;i++){
+                ainput[i].index=i;
+                ainput[i].onclick=function(){
+                    
+                    for(var i=0;i<ainput.length;i++){
+                        ainput[i].className='';
+                        adiv[i].style.display='none'
+                    }
+                    this.className='active';
+                    adiv[this.index].style.display='block'
+                    
+                }
+            }
+            
+        }
+
+*/
+
+/* var odiv=null;
+var ainput=null;
+var adiv=null;
+
+window.onload=function(){
+  
+
+    odiv=document.getElementById("div1");
+    ainput=odiv.getElementsByTagName("input");
+    adiv=odiv.getElementsByTagName("div");
+    init();
+
+}
+
+
+function init(){
+
+    for(var i=0;i<ainput.length;i++){
+        ainput[i].index=i;
+        ainput[i].onclick=getdis;
+    }
+
+}
+
+function getdis(){
+
+    for(var i=0;i<ainput.length;i++){
+        ainput[i].className='';
+        adiv[i].style.display='none'
+    }
+
+    this.className='active';
+    adiv[this.index].style.display='block'
+
+} */
+
+
+/* 改成面向对象的写法
+    全局变量就是属性
+    函数就是方法
+    onload中创建对象
+    改this指向问题：事件或者是定时器
+*/
+window.onload=function(){
+    var tab=new Tab();
+    tab.init();
+}
+function Tab(){
+    this.odiv=document.getElementById("div1");
+    this.ainput=this.odiv.getElementsByTagName("input");
+    this.adiv=this.odiv.getElementsByTagName("div");
+}
+Tab.prototype.init=function(){
+    var This=this;
+    for(var i=0;i<this.ainput.length;i++){
+        
+        this.ainput[i].index=i;
+        this.ainput[i].onclick=function(){
+            This.getdis(this);
+        };
+    }
+}
+Tab.prototype.getdis=function(obj){
+    for(var i=0;i<this.ainput.length;i++){
+        this.ainput[i].className='';
+        this.adiv[i].style.display='none'
+    }
+
+    obj.className='active';
+    this.adiv[obj.index].style.display='block'
+}
+
+</script>
+
+     <div id="div1">
+
+        <input class="active" type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+
+        <div style="display:block">1111</div>
+        <div>2222</div>
+        <div>3333</div>
+
+     </div>
+
+</body>
+</html>

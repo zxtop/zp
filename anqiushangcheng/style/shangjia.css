@@ -1,0 +1,401 @@
+#shangjia{ width:1200px;height:auto; margin:0 auto; margin-top:37px;}
+/*左边*/
+#shangjia .shangjia_left{ width:233px;height:748px; border:1px solid #eaeaea; float:left;}
+#shangjia .shangjia_left .admin{ width:233px;height:190px; }
+#shangjia .shangjia_left .admin h3{ color:#1f1f1f; font:100 18px/60px "微软雅黑"; text-indent:50px;}
+#shangjia .shangjia_left .admin p{ color:#666767; font:100 14px/30px ""; text-indent:50px;}
+#shangjia .shangjia_left .admin p strong{ color:#f76120; font:100 14px/30px "微软雅黑";}
+
+#shangjia .shangjia_left .dingdan{width:233px;height:auto; border-top:1px solid #eaeaea;}
+#shangjia .shangjia_left .dingdan h3{width:233px;height:30px; color:#1f1f1f; font:100 16px/30px "微软雅黑"; text-indent:50px; margin-top:25px; margin-bottom:10px;}
+#shangjia .shangjia_left .dingdan ul li{ width:233px;height:35px; position:relative;}
+#shangjia .shangjia_left .dingdan ul li b{ width:3px;height:3px; background:#818181; display: block; position:absolute;left:40px;top:15px;}
+#shangjia .shangjia_left .dingdan ul li span{ width:15px;height:17px; background:url(../images/add.jpg); display:none; position:absolute;right:20px;top:12px;}
+#shangjia .shangjia_left .dingdan ul li a{width:233px;height:35px; color:#595959; font:100 14px/35px "微软雅黑"; display:block; text-indent:60px;}
+#shangjia .shangjia_left .dingdan ul li a.first{ text-indent:15px;}
+#shangjia .shangjia_left .dingdan ul li a:hover{ color:#fff; background:#00a2ff;}
+
+
+/*右边产品信息*/
+#shangjia .shangjia_right{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .shangjia_right form{ width:884px;height:40px;margin:20px auto;}
+#shangjia .shangjia_right form .one{width:316px;height:40px; display:block; float:left; color:#666767; font:100 12px/40px "";}
+#shangjia .shangjia_right form .one select{ width:92px;height:27px; border:1px solid #ccc;color:#666767;}
+#shangjia .shangjia_right form .one .sou{ width:160px;height:31px; border:1px solid #ccc;}
+#shangjia .shangjia_right form .one button{ width:45px;height:34px; background:url(../images/jiao.jpg) no-repeat; border:none; color:#fff;}
+#shangjia .shangjia_right form .two{width:240px;height:40px; display:block; float:left;color:#666767; font:100 12px/40px "";}
+#shangjia .shangjia_right form .two select.zhuangtai{width:141px;height:27px; border:1px solid #ccc;color:#666767;}
+#shangjia .shangjia_right form .three{width:200px;height:40px; display:block; float:left;color:#666767; font:100 12px/40px "";}
+#shangjia .shangjia_right form .three select.quyu{width:141px;height:27px; border:1px solid #ccc;color:#666767;}
+
+#shangjia .shangjia_right .cont{ width:884px;height:auto; border:1px solid #ccc; margin:0 auto;}
+#shangjia .shangjia_right .cont .biaoti{width:884px;height:42px; background:#f6f6f6; border-bottom:1px solid #ccc;}
+#shangjia .shangjia_right .cont .biaoti li{ float:left; color:#4b4b4b; font:900 12px/42px "";}
+#shangjia .shangjia_right .cont .biaoti li.one{width:173px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .biaoti li.two{ width:142px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .biaoti li.three{ width:145px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .biaoti li.four{ width:171px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .biaoti li.five{ width:117px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .biaoti li.six{ width:131px;height:42px; text-align:center;}
+
+#shangjia .shangjia_right .cont .lie{width:884px;height:83px;border-bottom:1px solid #ccc;}
+#shangjia .shangjia_right .cont .lie li{ float:left; color:#4b4b4b; font:100 12px/42px "";}
+#shangjia .shangjia_right .cont .lie li.one1{width:173px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .lie li.two1{ width:142px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .lie li.three1{ width:145px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .lie li.four1{ width:171px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .lie li.five1{ width:117px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .shangjia_right .cont .lie li.six1{ width:131px;height:42px; text-align:center;}
+#shangjia .shangjia_right .cont .lie p{ color:#919292; font:100 12px/41px ""; position:relative; width:884px;height:41px; background:#f6f6f6; text-indent:10px;}
+#shangjia .shangjia_right .cont .lie p a{ color:#00a2ff;}
+#shangjia .shangjia_right .cont .lie p strong{ width:300px;height:41px; display:block; position:absolute;right:120px;top:0px; font-weight:100;}
+
+
+
+#shangjia .shangjia_right .cont .fenye{width:884px;height:30px; margin:20px auto;}
+#shangjia .shangjia_right .cont .fenye .fy_cont{width:490px;height:35px; margin:0px auto; margin-left:300px;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li{ float:left; margin-right:5px; border:1px solid #ececec;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li.shang{ width:72px;height:35px;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li.xia{ width:33px;height:35px;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li.shang a{ color:#656565;font:100 14px/35px "微软雅黑"; text-align:center;width:72px;height:35px; display:block;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li.shang a.s1{ color:#0083e2;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li.xia a{ color:#5b5b5b; font:100 16px/35px "微软雅黑"; text-align:center;width:33px;height:35px; display:block;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li.xia a.s2{ background:#00a2ff; color:#fff; width:33px;height:35px; display:block;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li.xia a:hover{ background:#00a2ff; color:#fff;}
+#shangjia .shangjia_right .cont .fenye .fy_cont ul li.shang a:hover{ background:#00a2ff; color:#fff;}
+
+
+
+/*团购券列表信息*/
+#shangjia .tuangouquan_right{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .tuangouquan_right form{ width:940px;height:40px;margin:20px auto; margin-left:15px; position:relative;}
+#shangjia .tuangouquan_right form .one{width:316px;height:40px; display:block; float:left; color:#666767; font:100 12px/40px "";}
+#shangjia .tuangouquan_right form .one select{ width:92px;height:27px; border:1px solid #ccc;color:#666767;}
+#shangjia .tuangouquan_right form .one .sou{ width:160px;height:31px; border:1px solid #ccc;}
+#shangjia .tuangouquan_right form .one button{ width:45px;height:34px; background:url(../images/jiao.jpg) no-repeat; border:none; color:#fff;}
+#shangjia .tuangouquan_right form .two{width:92px;height:40px; display:block; float:left;color:#666767; font:100 12px/40px ""; }
+#shangjia .tuangouquan_right form .two select{width:92px;height:27px; border:1px solid #ccc;color:#666767; margin-top:5px;}
+#shangjia .tuangouquan_right form .three{ width:400px;height:40px; display:block; position:absolute;left:409px;top:0px;color:#666767; font:100 12px/40px ""; }
+#shangjia .tuangouquan_right form .three iframe{z-index:1000;}
+#shangjia .tuangouquan_right form .four{width:257px;height:40px; display:block; float:right;color:#666767; font:100 12px/40px "";}
+#shangjia .tuangouquan_right form .four select.quyu{width:127px;height:27px; border:1px solid #ccc;color:#666767;}
+
+#shangjia .tuangouquan_right .cont{ width:884px;height:auto; border:1px solid #ccc; margin:0 auto;}
+#shangjia .tuangouquan_right .cont .biaoti{width:884px;height:42px; background:#f6f6f6; border-bottom:1px solid #ccc;}
+#shangjia .tuangouquan_right .cont .biaoti li{ float:left; color:#4b4b4b; font:900 12px/42px "";}
+#shangjia .tuangouquan_right .cont .biaoti li.one{width:133px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .biaoti li.two{ width:161px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .biaoti li.three{ width:146px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .biaoti li.four{ width:128px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .biaoti li.five{ width:90px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .biaoti li.six{ width:94px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .biaoti li.seven{ width:126px;height:42px; text-align:center;}
+
+#shangjia .tuangouquan_right .cont .lie{width:884px;height:49px;border-bottom:1px solid #ccc;}
+#shangjia .tuangouquan_right .cont .lie li{ float:left; color:#4b4b4b; font:100 12px/42px "";}
+#shangjia .tuangouquan_right .cont .lie li.one1{width:133px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .lie li.two1{ width:161px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .lie li.three1{ width:146px;height:49px; text-align:center; border-right:1px solid #eeeeee; font-weight:900;}
+#shangjia .tuangouquan_right .cont .lie li.four1{ width:128px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .lie li.five1{ width:90px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .tuangouquan_right .cont .lie li.six1{ width:94px;height:49px; text-align:center;border-right:1px solid #eeeeee;font-weight:900;}
+#shangjia .tuangouquan_right .cont .lie li.seven1{ width:126px;height:49px;text-align:center;}
+#shangjia .tuangouquan_right .cont .lie li.seven1 a{ color:#00a2ff;}
+
+#shangjia .tuangouquan_right .cont .lie p{ color:#919292; font:100 12px/41px ""; float:left;width:884px;height:41px; text-indent:10px; }
+#shangjia .tuangouquan_right .cont .lie p a{ color:#00a2ff;}
+#shangjia .tuangouquan_right .cont .lie p strong{ width:300px;height:41px; display:block; float:left;font-weight:100;}
+
+
+#shangjia .tuangouquan_right .cont .fenye{width:884px;height:30px; margin:20px auto;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont{width:490px;height:35px; margin:0px auto; margin-left:300px;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li{ float:left; margin-right:5px; border:1px solid #ececec;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li.shang{ width:72px;height:35px;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li.xia{ width:33px;height:35px;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li.shang a{ color:#656565;font:100 14px/35px "微软雅黑"; text-align:center;width:72px;height:35px; display:block;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li.shang a.s1{ color:#0083e2;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li.xia a{ color:#5b5b5b; font:100 16px/35px "微软雅黑"; text-align:center;width:33px;height:35px; display:block;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li.xia a.s2{ background:#00a2ff; color:#fff; width:33px;height:35px; display:block;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li.xia a:hover{ background:#00a2ff; color:#fff;}
+#shangjia .tuangouquan_right .cont .fenye .fy_cont ul li.shang a:hover{ background:#00a2ff; color:#fff;}
+
+/*订单列表*/
+#shangjia .dingdan_right{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .dingdan_right form{ width:940px;height:40px;margin:20px auto; margin-left:15px; position:relative;}
+#shangjia .dingdan_right form .one{width:316px;height:40px; display:block; float:left; color:#666767; font:100 12px/40px "";}
+#shangjia .dingdan_right form .one select{ width:92px;height:27px; border:1px solid #ccc;color:#666767;}
+#shangjia .dingdan_right form .one .sou{ width:160px;height:31px; border:1px solid #ccc;}
+#shangjia .dingdan_right form .one button{ width:45px;height:34px; background:url(../images/jiao.jpg) no-repeat; border:none; color:#fff;}
+#shangjia .dingdan_right form .two{width:92px;height:40px; display:block; float:left;color:#666767; font:100 12px/40px ""; }
+#shangjia .dingdan_right form .two select{width:92px;height:27px; border:1px solid #ccc;color:#666767; margin-top:5px;}
+#shangjia .dingdan_right form .three{ width:400px;height:40px; display:block; position:absolute;left:409px;top:0px;color:#666767; font:100 12px/40px ""; }
+#shangjia .dingdan_right form .three iframe{z-index:1000;}
+#shangjia .dingdan_right form .three button{width:45px;height:34px; background:url(../images/jiao.jpg) no-repeat; border:none; color:#fff; position:absolute;right:85px;top:2px;}
+#shangjia .dingdan_right form .four{width:200px;height:40px; display:block; float:right;color:#666767; font:100 12px/40px ""; }
+#shangjia .dingdan_right form .four select.quyu{width:93px;height:27px; border:1px solid #ccc;color:#666767;}
+
+#shangjia .dingdan_right .cont{ width:884px;height:auto; border:1px solid #ccc; margin:0 auto;}
+#shangjia .dingdan_right .cont .biaoti{width:884px;height:42px; background:#f6f6f6; border-bottom:1px solid #ccc;}
+#shangjia .dingdan_right .cont .biaoti li{ float:left; color:#4b4b4b; font:900 12px/42px "";}
+#shangjia .dingdan_right .cont .biaoti li.one{width:122px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .biaoti li.two{ width:114px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .biaoti li.three{ width:79px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .biaoti li.four{ width:89px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .biaoti li.five{ width:130px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .biaoti li.six{ width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .biaoti li.seven{ width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .biaoti li.eight{width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .biaoti li.eight{width:123px;height:42px; text-align:center;}
+
+#shangjia .dingdan_right .cont .lie{width:884px;height:49px;border-bottom:1px solid #ccc;}
+#shangjia .dingdan_right .cont .lie li{ float:left; color:#4b4b4b; font:100 12px/42px "";}
+#shangjia .dingdan_right .cont .lie li.one1{width:122px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .lie li.two1{ width:114px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .lie li.three1{ width:79px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .lie li.four1{ width:89px;height:49px; text-align:center; border-right:1px solid #eeeeee; font-weight:900;}
+#shangjia .dingdan_right .cont .lie li.five1{ width:130px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .lie li.six1{ width:73px;height:49px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .lie li.seven1{ width:73px;height:49px;text-align:center;border-right:1px solid #eeeeee;font-weight:900;}
+#shangjia .dingdan_right .cont .lie li.eight1{width:73px;height:49px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .dingdan_right .cont .lie li.nine1{width:123px;height:49px; text-align:center; }
+
+#shangjia .dingdan_right .cont .lie p{ color:#919292; font:100 12px/41px ""; float:left;width:884px;height:41px; text-indent:10px; }
+#shangjia .dingdan_right .cont .lie p a{ color:#00a2ff;}
+#shangjia .dingdan_right .cont .lie p strong{ width:300px;height:41px; display:block; float:left;font-weight:100;}
+
+
+#shangjia .dingdan_right .cont .fenye{width:884px;height:30px; margin:20px auto;}
+#shangjia .dingdan_right .cont .fenye .fy_cont{width:490px;height:35px; margin:0px auto; margin-left:300px;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li{ float:left; margin-right:5px; border:1px solid #ececec;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li.shang{ width:72px;height:35px;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li.xia{ width:33px;height:35px;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li.shang a{ color:#656565;font:100 14px/35px "微软雅黑"; text-align:center;width:72px;height:35px; display:block;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li.shang a.s1{ color:#0083e2;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li.xia a{ color:#5b5b5b; font:100 16px/35px "微软雅黑"; text-align:center;width:33px;height:35px; display:block;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li.xia a.s2{ background:#00a2ff; color:#fff; width:33px;height:35px; display:block;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li.xia a:hover{ background:#00a2ff; color:#fff;}
+#shangjia .dingdan_right .cont .fenye .fy_cont ul li.shang a:hover{ background:#00a2ff; color:#fff;}
+
+
+
+/*发货清单*/
+#shangjia .fahuo_right{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .fahuo_right form{ width:884px;height:40px;margin:20px auto;}
+#shangjia .fahuo_right form .one{width:316px;height:40px; display:block; float:left; color:#666767; font:100 12px/40px "";}
+#shangjia .fahuo_right form .one select{ width:92px;height:27px; border:1px solid #ccc;color:#666767;}
+#shangjia .fahuo_right form .one .sou{ width:160px;height:31px; border:1px solid #ccc;}
+#shangjia .fahuo_right form .one button{ width:45px;height:34px; background:url(../images/jiao.jpg) no-repeat; border:none; color:#fff;}
+#shangjia .fahuo_right form .two{width:240px;height:40px; display:block; float:left;color:#666767; font:100 12px/40px "";}
+#shangjia .fahuo_right form .two select.zhuangtai{width:141px;height:27px; border:1px solid #ccc;color:#666767;}
+#shangjia .fahuo_right form .three{width:200px;height:40px; display:block; float:left;color:#666767; font:100 12px/40px "";}
+#shangjia .fahuo_right form .three select.quyu{width:141px;height:27px; border:1px solid #ccc;color:#666767;}
+
+#shangjia .fahuo_right .cont{ width:884px;height:auto; border:1px solid #ccc; margin:0 auto;}
+#shangjia .fahuo_right .cont .biaoti{width:884px;height:42px; background:#f6f6f6; border-bottom:1px solid #ccc;}
+#shangjia .fahuo_right .cont .biaoti li{ float:left; color:#4b4b4b; font:900 12px/42px "";}
+#shangjia .fahuo_right .cont .biaoti li.one{width:122px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .biaoti li.two{ width:114px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .biaoti li.three{ width:79px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .biaoti li.four{ width:89px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .biaoti li.five{ width:130px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .biaoti li.six{ width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .biaoti li.seven{ width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .biaoti li.eight{ width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .biaoti li.nine{ width:123px;height:42px; text-align:center;}
+#shangjia .fahuo_right .cont .lie{width:884px;height:42px;border-bottom:1px solid #ccc;}
+#shangjia .fahuo_right .cont .lie li{ float:left; color:#4b4b4b; font:100 12px/42px "";}
+#shangjia .fahuo_right .cont .lie li.one1{width:122px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .lie li.two1{ width:114px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .lie li.three1{ width:79px;height:42px; text-align:center; border-right:1px solid #eeeeee; font-weight:900;}
+#shangjia .fahuo_right .cont .lie li.four1{ width:89px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .lie li.five1{ width:130px;height:42px; text-align:center; border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .lie li.six1{ width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee; font-weight:900;}
+#shangjia .fahuo_right .cont .lie li.seven1{ width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .lie li.eight1{ width:73px;height:42px; text-align:center;border-right:1px solid #eeeeee;}
+#shangjia .fahuo_right .cont .lie li.nine1{ width:123px;height:42px; text-align:center;}
+#shangjia .fahuo_right .cont .lie li.nine1 a{ color:#00a2ff;}
+
+
+#shangjia .fahuo_right .cont .fenye{width:884px;height:30px; margin:20px auto;}
+#shangjia .fahuo_right .cont .fenye .fy_cont{width:490px;height:35px; margin:0px auto; margin-left:300px;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li{ float:left; margin-right:5px; border:1px solid #ececec;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li.shang{ width:72px;height:35px;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li.xia{ width:33px;height:35px;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li.shang a{ color:#656565;font:100 14px/35px "微软雅黑"; text-align:center;width:72px;height:35px; display:block;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li.shang a.s1{ color:#0083e2;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li.xia a{ color:#5b5b5b; font:100 16px/35px "微软雅黑"; text-align:center;width:33px;height:35px; display:block;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li.xia a.s2{ background:#00a2ff; color:#fff; width:33px;height:35px; display:block;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li.xia a:hover{ background:#00a2ff; color:#fff;}
+#shangjia .fahuo_right .cont .fenye .fy_cont ul li.shang a:hover{ background:#00a2ff; color:#fff;}
+
+/*发货清单-处理*/
+#shangjia .fahuo1_right{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .fahuo1_right h3{ color:#333; font:900 12px/40px ""; text-indent:20px;}
+#shangjia .fahuo1_right h2{ color:#00a2ff; background:#f2f2f2; text-align:center; font:100 12px/32px ""; border-bottom:1px solid #ccc;}
+#shangjia .fahuo1_right .one{ width:940px;height:auto;}
+#shangjia .fahuo1_right .one li{ width:940px;height:41px; border-bottom:1px solid #ccc;}
+#shangjia .fahuo1_right .one li b{ width:148px; height:41px; background:#f4f8fc; display:block; text-align:right; font:100 12px/41px ""; border-right:1px solid #ccc; float:left;}
+#shangjia .fahuo1_right .one li span{ width:387px; height:41px; background:#fff; display:block; text-align:left; font:100 12px/41px ""; float:left; text-indent:5px;}
+#shangjia .fahuo1_right .one li font{ width:147px;height:41px; display:block; background:#f4f8fc; text-align:right;font:100 12px/41px "";border-right:1px solid #ccc; float:left;}
+#shangjia .fahuo1_right .one li strong{ width:256px; height:41px; background:#fff; display:block; text-align:left; font:100 12px/41px ""; float:left; text-indent:5px;}
+
+#shangjia .fahuo1_right .two{ width:940px;height:auto;}
+#shangjia .fahuo1_right .two li{ width:940px;height:50px; border-bottom:1px solid #ccc;}
+#shangjia .fahuo1_right .two li b{ width:148px; height:50px; background:#f4f8fc; display:block; text-align:right; font:100 12px/50px ""; border-right:1px solid #ccc; float:left;}
+#shangjia .fahuo1_right .two li span{ width:387px; height:50px; background:#fff; display:block; text-align:left; font:100 12px/50px ""; float:left; text-indent:5px; }
+#shangjia .fahuo1_right .two li form select{ width:160px;height:26px; color:#555; font:100 12px/26px "";}
+#shangjia .fahuo1_right .two li form button{ width:74px;height:27px; background:url(../images/dayin.jpg) no-repeat; border:none; color:#fff; font:100 12px/27px ""; text-align:center;}
+
+/*结算记录*/
+#shangjia .jiesuan_right{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .jiesuan_right h3{ color:#333; font:100 18px/77px "微软雅黑"; text-indent:10px; width:300px;height:77px; float:left;}
+
+#shangjia .jiesuan_right .dd_cont{ width:420px;height:77px; float:right;}
+#shangjia .jiesuan_right .dd_cont ul li{float:left; width:70px;height:70px;font:100 12px/77px "";}
+#shangjia .jiesuan_right .dd_cont ul li.one{width:50px;height:70px;}
+#shangjia .jiesuan_right .dd_cont ul li a{ width:70px;height:70px; display:block;color:#555; font:100 12px/77px ""; }
+#shangjia .jiesuan_right .dd_cont ul li a:hover{ color:#00a2ff;}
+#shangjia .jiesuan_right .dd_cont ul li a.first{ width:70px;height:70px; display:block;color:#ff0000; font:900 12px/77px ""; }
+#shangjia .jiesuan_right .dd_cont ul li a strong{color:#555; font:100 12px/77px "";}
+#shangjia .jiesuan_right .dd_cont ul li a.first strong{color:#555; font:100 12px/77px "";}
+
+#shangjia .jiesuan_right .biaoti{ width:891px; height:35px; margin:0 auto;}
+#shangjia .jiesuan_right .biaoti li{ float:left; margin-right:3px;background:#f2f2f2; color:#696666; font:100 12px/35px ""; text-align:center;}
+#shangjia .jiesuan_right .biaoti li.f1{ width:190px;height:35px; }
+#shangjia .jiesuan_right .biaoti li.f2{ width:137px;height:35px;}
+#shangjia .jiesuan_right .biaoti li.f3{ width:217px;height:35px;}
+#shangjia .jiesuan_right .biaoti li.f4{ width:121px;height:35px;}
+#shangjia .jiesuan_right .biaoti li.f5{ width:214px;height:35px; margin-right:0px;}
+
+#shangjia .jiesuan_right .nei{ width:891px;height:70px; margin:0 auto; border-bottom:1px solid #ccc;}
+#shangjia .jiesuan_right .nei li{ float:left;color:#696666; font:100 12px/70px ""; text-align:center;}
+#shangjia .jiesuan_right .nei li.b1{ width:190px;height:35px; }
+#shangjia .jiesuan_right .nei li.b2{ width:137px;height:35px;}
+#shangjia .jiesuan_right .nei li.b3{ width:217px;height:35px;}
+#shangjia .jiesuan_right .nei li.b3 p{ width:217px;height:20px;}
+#shangjia .jiesuan_right .nei li.b4{ width:121px;height:35px;}
+#shangjia .jiesuan_right .nei li.b5{ width:220px;height:35px;margin-right:0px;}
+
+
+
+
+/*结算金额明细*/
+#shangjia .jiesuan_right1{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .jiesuan_right1 h3{ color:#333; font:100 18px/77px "微软雅黑"; text-indent:10px; width:300px;height:77px;}
+
+
+#shangjia .jiesuan_right1 .biaoti{ width:891px; height:35px; margin:0 auto;}
+#shangjia .jiesuan_right1 .biaoti li{ float:left; margin-right:3px;background:#f2f2f2; color:#333; font:900 14px/35px ""; text-align:center;}
+#shangjia .jiesuan_right1 .biaoti li.f1{ width:176px;height:35px; }
+#shangjia .jiesuan_right1 .biaoti li.f2{ width:95px;height:35px;}
+#shangjia .jiesuan_right1 .biaoti li.f3{ width:108px;height:35px; }
+#shangjia .jiesuan_right1 .biaoti li.f4{ width:116px;height:35px;}
+#shangjia .jiesuan_right1 .biaoti li.f5{ width:81px;height:35px;}
+#shangjia .jiesuan_right1 .biaoti li.f6{ width:102px;height:35px;}
+#shangjia .jiesuan_right1 .biaoti li.f7{ width:86px;height:35px;}
+#shangjia .jiesuan_right1 .biaoti li.f8{ width:106px;height:35px;  margin-right:0px;}
+
+#shangjia .jiesuan_right1 .nei{ width:891px;height:70px; margin:0 auto; border-bottom:1px solid #ccc;}
+#shangjia .jiesuan_right1 .nei li{ float:left;color:#696666; font:100 12px/70px ""; text-align:center;}
+#shangjia .jiesuan_right1 .nei li.b1{ width:176px;height:35px;}
+#shangjia .jiesuan_right1 .nei li.b2{ width:95px;height:35px;}
+#shangjia .jiesuan_right1 .nei li.b3{ width:108px;height:35px;}
+#shangjia .jiesuan_right1 .nei li.b4{ width:116px;height:35px;}
+#shangjia .jiesuan_right1 .nei li.b5{ width:81px;height:35px; font-weight:900;}
+#shangjia .jiesuan_right1 .nei li.b6{ width:102px;height:35px;}
+#shangjia .jiesuan_right1 .nei li.b7{ width:86px;height:35px;}
+#shangjia .jiesuan_right1 .nei li.b8{ width:106px;height:35px;}
+
+
+/*团购券验证*/
+#shangjia .tuangouquan_yanzheng{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .tuangouquan_yanzheng h3{ color:#333; font:100 18px/77px "微软雅黑"; text-indent:30px; width:300px;height:77px;}
+#shangjia .tuangouquan_yanzheng form{width:608px;height:180px; margin-left:70px;}
+#shangjia .tuangouquan_yanzheng form label{ width:608px;height:40px; display:block; font:100 14px/40px "";}
+#shangjia .tuangouquan_yanzheng form label input{ width:333px;height:37px; border:1px solid #ccc;}
+#shangjia .tuangouquan_yanzheng form label strong{ color:#7b7a7a; font:100 12px/40px "";}
+
+#shangjia .tuangouquan_yanzheng form .chax{width:74px;height:35px; background:#ededed; border:1px solid #ccc; color:#7b7a7a; font:900 14px/35px ""; text-align:center; margin-left:90px; margin-top:20px;}
+#shangjia .tuangouquan_yanzheng form .xiao{width:45px;height:34px; background:url(../images/jiao.jpg) no-repeat; border:none; color:#fff; font:900 14px/34px ""; text-align:center;}
+#shangjia .tuangouquan_yanzheng p{ color:#555; font:100 14px/40px ""; text-indent:70px;}
+
+/*我的评价*/
+#shangjia .pingjia{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .pingjia h3{ color:#333; font:100 18px/77px "微软雅黑"; text-indent:30px; width:500px;height:77px;}
+#shangjia .pingjia h3 strong{ font-size:12px;}
+#shangjia .pingjia .con{width:891px;height:auto; border:1px solid #ccc; margin:0 auto;}
+#shangjia .pingjia .con .biaoti{ width:891px;height:36px; background:#f9f9f9; margin:0 auto; border-bottom:1px solid #ccc;}
+#shangjia .pingjia .con .biaoti li{ float:left; color:#696666; font:100 12px/36px ""; text-align:center;}
+#shangjia .pingjia .con .biaoti li.one{width:160px;height:36px;}
+#shangjia .pingjia .con .biaoti li.two{width:278px;height:36px;}
+#shangjia .pingjia .con .biaoti li.three{width:195px;height:36px}
+#shangjia .pingjia .con .biaoti li.four{width:143px;height:36px;}
+#shangjia .pingjia .con .biaoti li.five{width:113px;height:36px;}
+
+#shangjia .pingjia .con .nei{ width:891px;height:65px;margin:0 auto; border-bottom:1px solid #ccc;}
+#shangjia .pingjia .con .nei li{ float:left; color:#696666; font:100 12px/65px ""; text-align:center;}
+#shangjia .pingjia .con .nei li.one1{width:160px;height:65px; color:#f87d51; font:100 18px/65px "微软雅黑"}
+#shangjia .pingjia .con .nei li.two1{width:278px;height:65px;}
+#shangjia .pingjia .con .nei li.two1 p{width:278px;height:auto; font:100 12px/20px ""; margin-top:15px;}
+#shangjia .pingjia .con .nei li.three1{width:195px;height:65px}
+#shangjia .pingjia .con .nei li.four1{width:143px;height:65px;}
+#shangjia .pingjia .con .nei li.five1{width:113px;height:65px;}
+#shangjia .pingjia .con .nei li.five1 a{ color:#00a2ff;}
+
+/*我要结算*/
+#shangjia .zhanghujiesuan{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .zhanghujiesuan h3{ color:#333; font:100 18px/77px "微软雅黑"; text-indent:30px; width:500px;height:77px;}
+#shangjia .zhanghujiesuan p{ color:#474747; font:100 14px/40px "微软雅黑"; text-indent:30px;}
+#shangjia .zhanghujiesuan form{ width:350px;height:200px;margin-left:30px;}
+
+#shangjia .zhanghujiesuan form label{ width:350px; height:35px; display:block; color:#403f3f; font:100 14px/35px "";}
+#shangjia .zhanghujiesuan form label input{ width:176px;height:35px; border:1px solid #ccc;}
+#shangjia .zhanghujiesuan form label input.o{ width:15px;height:15px;}
+#shangjia .zhanghujiesuan form button{ width:120px;height:38px; border:none; color:#fff; font:900 14px/38px ""; text-align:center; background:#00a2ff; margin-left:100px; margin-top:20px;}
+
+/*我要结算支付宝结算*/
+#shangjia .zhanghujiesuan1{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .zhanghujiesuan1 h3{ color:#333; font:100 18px/77px "微软雅黑"; text-indent:30px; width:500px;height:77px;}
+#shangjia .zhanghujiesuan1 p{ color:#474747; font:100 14px/40px "微软雅黑"; text-indent:30px;}
+#shangjia .zhanghujiesuan1 form{ width:350px;height:250px;margin-left:30px;}
+
+#shangjia .zhanghujiesuan1 form label{ width:350px; height:35px; display:block; color:#403f3f; font:100 14px/35px "";}
+#shangjia .zhanghujiesuan1 form label input{ width:176px;height:35px; border:1px solid #ccc;}
+#shangjia .zhanghujiesuan1 form label input.o{ width:15px;height:15px;}
+#shangjia .zhanghujiesuan1 form button{ width:120px;height:38px; border:none; color:#fff; font:900 14px/38px ""; text-align:center; background:#00a2ff; margin-left:100px; margin-top:20px;}
+
+
+
+/*我要结算银行结算*/
+#shangjia .zhanghujiesuan2{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .zhanghujiesuan2 h3{ color:#333; font:100 18px/77px "微软雅黑"; text-indent:30px; width:500px;height:77px;}
+#shangjia .zhanghujiesuan2 p{ color:#474747; font:100 14px/40px "微软雅黑"; text-indent:30px;}
+#shangjia .zhanghujiesuan2 form{ width:350px;height:350px;margin-left:30px;}
+
+#shangjia .zhanghujiesuan2 form label{ width:350px; height:35px; display:block; color:#403f3f; font:100 14px/35px "";}
+#shangjia .zhanghujiesuan2 form label input{ width:176px;height:35px; border:1px solid #ccc;}
+#shangjia .zhanghujiesuan2 form label input.o{ width:15px;height:15px;}
+#shangjia .zhanghujiesuan2 form button{ width:120px;height:38px; border:none; color:#fff; font:900 14px/38px ""; text-align:center; background:#00a2ff; margin-left:100px; margin-top:20px;}
+#shangjia .zhanghujiesuan2 form label select{ width:145px;height:25px;}
+
+
+/*我要结算上门提现*/
+#shangjia .zhanghujiesuan3{ width:940px;height:auto; border:1px solid #eaeaea; float:right;}
+#shangjia .zhanghujiesuan3 h3{ color:#333; font:100 18px/77px "微软雅黑"; text-indent:30px; width:500px;height:77px;}
+#shangjia .zhanghujiesuan3 p{ color:#474747; font:100 14px/40px "微软雅黑"; text-indent:30px;}
+#shangjia .zhanghujiesuan3 form{ width:450px;height:350px;margin-left:30px;}
+
+#shangjia .zhanghujiesuan3 form label{ width:350px; height:35px; display:block; color:#403f3f; font:100 14px/35px "";}
+#shangjia .zhanghujiesuan3 form label input{ width:176px;height:35px; border:1px solid #ccc;}
+#shangjia .zhanghujiesuan3 form label input.o{ width:15px;height:15px;}
+#shangjia .zhanghujiesuan3 form button{ width:120px;height:38px; border:none; color:#fff; font:900 14px/38px ""; text-align:center; background:#00a2ff; margin-left:100px; margin-top:20px;}
+#shangjia .zhanghujiesuan3 form label select{ width:145px;height:25px;}
+
+
+
+
+
+
+
+
+
